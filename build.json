@@ -1,12 +1,15 @@
 {
-  "schema": "rift-bend-browser/1",
-  "builtAt": "2026-09-22T15:09:07.071Z",
-  "version": "8106a3f0fed5f9274f95",
-  "sourceRevision": "a0599ba00e6243f9d4ba4386e2ff8abcbbaa7bf4",
+  "schema": "rift-bend-browser/2",
+  "builtAt": "2026-09-23T04:38:24.220Z",
+  "version": "393b72283975d6018b1d",
+  "sourceRevision": "1a6d7d9c32dad19612327ac3eb3f1fd54a18ca07",
   "sourceDirty": false,
   "draft": false,
-  "semanticSha256": "8a1eb013c498e8e065265ef5dfa0327ae908a3cb4dde58dae9f324f9e924118b",
+  "application": "Bend-owned rules, UI, bitmap text, input policy, codec, replay, animation and PCM synthesis; browser IO transport only",
+  "semanticSha256": "c8dcce907c3c3a6f70e9dfa12a74966879f30ea338b2734637c9acf4579943bf",
+  "parentSemanticSha256": "8a1eb013c498e8e065265ef5dfa0327ae908a3cb4dde58dae9f324f9e924118b",
   "pixelSemanticSha256": "545c8c6ade06a5f59e9db985237adf1137a86c801b2b1a6b2bad9a43cee40398",
+  "graphicsManifestSha256": "c7f0deba5029f2c9434cc9af812f51618ade9e3efcf1295fe82f8bfec8df323a",
   "toolchain": {
     "bendVersion": "2.0.25",
     "bendRepository": "https://github.com/bendlang/bend",
@@ -17,12 +20,12 @@
     "target": "browser JavaScript; native parallelism not yet measured"
   },
   "files": {
-    "index.html": "8a85f605679eaa1e4163c94d15c9c649956d64875d897796393a3cd02cbc1891",
-    "main-txjs3938.js": "66e6708c813068e253aef609f33a4d02158b5ac4caa5e14705d705c7f9fc6cba",
-    "worker-0anet5y4.js": "3ceda03c1cf879018b1b1a2a78c4fc227e5a8b8b15e19bd33bbf78268bbbfda7",
-    "style-a608983de8e0.css": "a608983de8e00f7ca035b99a677ace65a2a61fbd3272e59a9282f4160b3c4320",
-    "THIRD_PARTY_NOTICES.txt": "f8e644145331fe4a6f850d796c6c9a2d3bb1f5616d5ea2d4162bf55accd98ed9",
+    "index.html": "95a1e89e88485a69830d75e7b9525013b38e60ca9cdefea37f29cdaffb50973b",
+    "host-fxzhbk56.js": "1727daa143653c63877cc4621c56bb5fac1e6704139b217b6a9ae62b0fcf7b8d",
+    "worker-xhar5trq.js": "c946a222b0b786afcc079d4fc2c33360c5e7f30b2529f67302a1dde69557a2d6",
+    "style-9a40f5a0fb94.css": "9a40f5a0fb9426a8eb706c61c7e26cb5d2d268af1201270d161549ec61745666",
+    "THIRD_PARTY_NOTICES.txt": "2fb868ac154db75bc658d3ef160fa5b5dba8278a664110c4ae14689b66f464b8",
     "Bend-Apache-2.0.txt": "78418ed3cfa4c3f320f827a96ed83349ef9e1af6dc4430b256a0ba2037c42615",
-    "sw.js": "8136923dd8d86a8cd4f93b725732d4e51e1cb6e2fe2fee973dc3377a88e7ad20"
+    "sw.js": "77cffcbbea18b1104215b9d64bed6fb8b347bfab2561f480f8bba14eddf1da6c"
   }
 }

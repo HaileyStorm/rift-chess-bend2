@@ -1,6 +1,6 @@
 /* A separate scope and cache from the production Three.js game. */
-const CACHE = 'rift-bend-v1-8106a3f0fed5f9274f95';
-const ASSETS = ["./","./build.json","./index.html","./main-txjs3938.js","./worker-0anet5y4.js","./style-a608983de8e0.css","./THIRD_PARTY_NOTICES.txt","./Bend-Apache-2.0.txt"];
+const CACHE = 'rift-bend-v1-393b72283975d6018b1d';
+const ASSETS = ["./","./build.json","./index.html","./host-fxzhbk56.js","./worker-xhar5trq.js","./style-9a40f5a0fb94.css","./THIRD_PARTY_NOTICES.txt","./Bend-Apache-2.0.txt"];
 self.addEventListener('install', event => event.waitUntil((async () => {
   const cache = await caches.open(CACHE);
   await cache.addAll(ASSETS.map(file => new Request(new URL(file, self.location.href), { cache: 'reload' })));
