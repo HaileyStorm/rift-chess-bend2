@@ -2,11 +2,11 @@
 
 [Play the experiment](https://haileystorm.github.io/rift-chess-bend2/) | [Original game](https://haileystorm.github.io/rift-chess/)
 
-Static distribution only. [Source, local Bend guide, laws, proofs and verification](https://github.com/HaileyStorm/rift-chess/tree/codex/bend2-adaptation/bend2) live on the separate adaptation branch. The exact build source and asset hashes are in `build.json`.
+Static distribution only. [Source, local Bend guide, laws, proofs and verification](https://github.com/HaileyStorm/rift-chess/tree/codex/visual-overhaul/bend2) live in the main project checkout. The exact build source and asset hashes are in `build.json`.
 
 The game rules, match history, opponent, picking, camera, immutable pixel renderer,
 bitmap text, menus, animation, input policy, record codec and synthesized sound
-are Bend 2.0.25 compiled to JavaScript. The browser adapter transports events,
+are Bend 2.0.26 compiled to JavaScript. The browser adapter transports events,
 copies Bend pixels to Canvas, plays Bend PCM through Web Audio, and supplies
 storage/file effects and a Bend-labeled accessibility mirror. It contains no
 chess or visible UI logic.

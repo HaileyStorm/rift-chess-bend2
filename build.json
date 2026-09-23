@@ -1,31 +1,31 @@
 {
   "schema": "rift-bend-browser/2",
-  "builtAt": "2026-09-23T04:38:24.220Z",
-  "version": "393b72283975d6018b1d",
-  "sourceRevision": "1a6d7d9c32dad19612327ac3eb3f1fd54a18ca07",
+  "builtAt": "2026-09-23T23:10:04.439Z",
+  "version": "361b9895746876a71757",
+  "sourceRevision": "78287a12b6b1098657096864b5193420789c249d",
   "sourceDirty": false,
   "draft": false,
   "application": "Bend-owned rules, UI, bitmap text, input policy, codec, replay, animation and PCM synthesis; browser IO transport only",
   "semanticSha256": "c8dcce907c3c3a6f70e9dfa12a74966879f30ea338b2734637c9acf4579943bf",
   "parentSemanticSha256": "8a1eb013c498e8e065265ef5dfa0327ae908a3cb4dde58dae9f324f9e924118b",
   "pixelSemanticSha256": "545c8c6ade06a5f59e9db985237adf1137a86c801b2b1a6b2bad9a43cee40398",
-  "graphicsManifestSha256": "c7f0deba5029f2c9434cc9af812f51618ade9e3efcf1295fe82f8bfec8df323a",
+  "graphicsManifestSha256": "122ae10108a00aa068cf48aa7cd3af03751c873652300167399faa4e286d2b49",
   "toolchain": {
-    "bendVersion": "2.0.25",
+    "bendVersion": "2.0.26",
     "bendRepository": "https://github.com/bendlang/bend",
-    "bendCommit": "a49524265bdfa5753a4bf38e25f0574a705dd868",
+    "bendCommit": "6a77e1246c351055cb15031267a7c76c87036cbc",
     "bunVersion": "1.4.2",
     "bunWindowsPackage": "@oven/bun-windows-x64@1.4.2",
     "telemetry": "BEND_NO_TELEMETRY=1",
     "target": "browser JavaScript; native parallelism not yet measured"
   },
   "files": {
-    "index.html": "95a1e89e88485a69830d75e7b9525013b38e60ca9cdefea37f29cdaffb50973b",
-    "host-fxzhbk56.js": "1727daa143653c63877cc4621c56bb5fac1e6704139b217b6a9ae62b0fcf7b8d",
-    "worker-xhar5trq.js": "c946a222b0b786afcc079d4fc2c33360c5e7f30b2529f67302a1dde69557a2d6",
-    "style-9a40f5a0fb94.css": "9a40f5a0fb9426a8eb706c61c7e26cb5d2d268af1201270d161549ec61745666",
-    "THIRD_PARTY_NOTICES.txt": "2fb868ac154db75bc658d3ef160fa5b5dba8278a664110c4ae14689b66f464b8",
+    "index.html": "e89093e447bc9d2bfd0d7fe68236733eb9621f476f57da9f03bc905fc9edb046",
+    "host-d0e3dkvk.js": "845e98c66fece6e746461e74437f917f3b8331373830255547ca4219ad691ff5",
+    "worker-7sefw2hv.js": "af2a675d39b0232bfcc515057013ed74d85a8195012cd1d055f3c213509ac0af",
+    "style-4cc0cbc1299f.css": "4cc0cbc1299fda4b5f369f1fa92656f4f6734f72a9b82af47b47c0a8c7d6eca0",
+    "THIRD_PARTY_NOTICES.txt": "fdfb294ccb38ddb08d871b9f6f566c8c7c3388e702e923fac761d037ed35a8c1",
     "Bend-Apache-2.0.txt": "78418ed3cfa4c3f320f827a96ed83349ef9e1af6dc4430b256a0ba2037c42615",
-    "sw.js": "77cffcbbea18b1104215b9d64bed6fb8b347bfab2561f480f8bba14eddf1da6c"
+    "sw.js": "b75749bdcb6d79cad84421e4e9463455199613b4e90dcd7ed109339f3ac39313"
   }
 }
