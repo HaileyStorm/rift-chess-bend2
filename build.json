@@ -1,31 +1,64 @@
 {
   "schema": "rift-bend-browser/2",
-  "builtAt": "2026-09-23T23:10:04.439Z",
-  "version": "361b9895746876a71757",
-  "sourceRevision": "78287a12b6b1098657096864b5193420789c249d",
+  "builtAt": "2026-09-26T02:06:10.589Z",
+  "version": "f261f9d623e679d401f7",
+  "sourceRevision": "bfc069dc2b4ebd1bdd96e5111073e3243f642beb",
   "sourceDirty": false,
   "draft": false,
+  "v2Preview": true,
+  "workerLibraries": {
+    "bot": {
+      "entry": "./worker-libs/bot/index.mjs",
+      "protocol": 1,
+      "program": "77d80270fe5ce1c4e629cb179921a71ae81a2530df0f388205587bab60414259",
+      "backend": "bend-web-workers-2",
+      "mode": "required-only",
+      "policy": "strict",
+      "sourceBindingSha256": "305dff558b6bf8705af802e337d19e8ab6341f64914e1723f3ecba18aad19dd8",
+      "files": [
+        "worker-libs/bot/bend-77d80270fe5ce1c4.program.mjs",
+        "worker-libs/bot/bend-77d80270fe5ce1c4.runtime.mjs",
+        "worker-libs/bot/bend-77d80270fe5ce1c4.worker.mjs",
+        "worker-libs/bot/index.mjs",
+        "worker-libs/bot/manifest.json"
+      ]
+    }
+  },
   "application": "Bend-owned rules, UI, bitmap text, input policy, codec, replay, animation and PCM synthesis; browser IO transport only",
   "semanticSha256": "c8dcce907c3c3a6f70e9dfa12a74966879f30ea338b2734637c9acf4579943bf",
   "parentSemanticSha256": "8a1eb013c498e8e065265ef5dfa0327ae908a3cb4dde58dae9f324f9e924118b",
   "pixelSemanticSha256": "545c8c6ade06a5f59e9db985237adf1137a86c801b2b1a6b2bad9a43cee40398",
-  "graphicsManifestSha256": "122ae10108a00aa068cf48aa7cd3af03751c873652300167399faa4e286d2b49",
+  "graphicsManifestSha256": "549935ef83d046ce034cc5ad7d4c4d3f13db39a5cea9644b62aa00ab24759eb3",
   "toolchain": {
-    "bendVersion": "2.0.26",
+    "bendVersion": "2.0.27",
     "bendRepository": "https://github.com/bendlang/bend",
-    "bendCommit": "6a77e1246c351055cb15031267a7c76c87036cbc",
+    "bendCommit": "d37909174ebd664338ae3194799a9e0899dedd51",
     "bunVersion": "1.4.2",
     "bunWindowsPackage": "@oven/bun-windows-x64@1.4.2",
     "telemetry": "BEND_NO_TELEMETRY=1",
     "target": "browser JavaScript; native parallelism not yet measured"
   },
   "files": {
-    "index.html": "e89093e447bc9d2bfd0d7fe68236733eb9621f476f57da9f03bc905fc9edb046",
-    "host-d0e3dkvk.js": "845e98c66fece6e746461e74437f917f3b8331373830255547ca4219ad691ff5",
-    "worker-7sefw2hv.js": "af2a675d39b0232bfcc515057013ed74d85a8195012cd1d055f3c213509ac0af",
-    "style-4cc0cbc1299f.css": "4cc0cbc1299fda4b5f369f1fa92656f4f6734f72a9b82af47b47c0a8c7d6eca0",
-    "THIRD_PARTY_NOTICES.txt": "fdfb294ccb38ddb08d871b9f6f566c8c7c3388e702e923fac761d037ed35a8c1",
+    "index.html": "0e82c1a9676d7f5f95568cb15ed5bdd45beb4abd1480825843c9ccd9528d5347",
+    "host-emn3kwdz.js": "21738d9de3137e4d30043e1f05fac2bbecfcf04c7ab490a8ba408bbbba945e86",
+    "worker-v2-68mp39yd.js": "b2997fa3cd914bc473e747ccd07f76fee68c9159887e9b9dae88d809d2ab4b3d",
+    "style-01f82ab8949f.css": "01f82ab8949f0755c6c37e681532ed3196d4b2c5fdb973dd3ef3aa9837cd610a",
+    "THIRD_PARTY_NOTICES.txt": "856b99c1f7eec339bd992d29410cc376e0a904d3ee45b11a7495021d37d40e12",
     "Bend-Apache-2.0.txt": "78418ed3cfa4c3f320f827a96ed83349ef9e1af6dc4430b256a0ba2037c42615",
-    "sw.js": "b75749bdcb6d79cad84421e4e9463455199613b4e90dcd7ed109339f3ac39313"
+    "Rift-Atlas-Sans-OFL.txt": "2af94f4fb533be8fa23282eb33e08ca311ddf47c2f32777e2040b282deeec65c",
+    "sprite-helper-q6912cfq.js": "89a36c57fef5cc65795e6d04e6a0216051aacae7fabad5d5f23a23d363dc9c8d",
+    "worker-libs/bot/index.mjs": "04fe288b2fbb31a01c6121d3b7053e674cd25392f655e24aaf097b989bd11dea",
+    "worker-libs/bot/bend-77d80270fe5ce1c4.program.mjs": "b4dcb6272d156557d6a6d0d39d7c1ccbc6783162f4f6f431a38e7b8c6a9dc61d",
+    "worker-libs/bot/bend-77d80270fe5ce1c4.worker.mjs": "de6f92d12533a51bfc1996427a6432a74c00912ef83b36ff110a88702cccc952",
+    "worker-libs/bot/bend-77d80270fe5ce1c4.runtime.mjs": "5def0b7c33be027416c869adbf16a26cc98a0008461b11c2e49453c955ad97d6",
+    "worker-libs/bot/manifest.json": "1f8948bd7405d82e095505b3daa7fa3935aace5145e38c2efa5285c066c2ab7b",
+    "assets/observatory-astral.rga": "9d4701ca52957506ec58466fa7d63b49a8f6338bd257f5e8f9b69f76b67067bb",
+    "assets/observatory-stone.rga": "0c782ce0f07fa8387ee1a3baba37fda20c46d2cc3febf285e8a104ea5c0e734f",
+    "assets/LICENSES.md": "65628c3a44a5a2baf63a86bb3a6a237ff6b9081986d8acc0f3fc2549ab7de4f8",
+    "assets/rift-observatory-font.rga": "d67f6b3321b0821fdb41ac3c59d42d633757db75a32328f7c38f7a94e5a91977",
+    "assets/pieces-fast-0.rga": "92355991cbf99556a73754fd904ec53a13f8e05fe1d1837d0696ebe6cdd7ad12",
+    "assets/pieces-fast-1.rga": "35e898841546ea10655c08ec763cb7793a038194c6058f9cbb312155da06ebeb",
+    "assets/pieces-fast-2.rga": "06aefb53eb2bc4d982add3690a3c0fbdb82dcaf9639797b374e908a49992e6eb",
+    "sw.js": "30a1522c6c30b3765ddfc058ba5ee017c1511daf67c90e55200da5f5ba812ee2"
   }
 }

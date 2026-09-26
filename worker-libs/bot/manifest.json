@@ -1,0 +1,1871 @@
+{
+  "protocol": 1,
+  "program": "77d80270fe5ce1c4e629cb179921a71ae81a2530df0f388205587bab60414259",
+  "backend": "bend-web-workers-2",
+  "mode": "required-only",
+  "policy": "strict",
+  "schemas": [
+    {
+      "kind": "adt",
+      "name": "../../core/Model.Position",
+      "arms": [
+        {
+          "tag": "Pos",
+          "fields": [
+            {
+              "name": "board",
+              "schema": 1
+            },
+            {
+              "name": "holes",
+              "schema": 2
+            },
+            {
+              "name": "side",
+              "schema": 3
+            },
+            {
+              "name": "rights",
+              "schema": 2
+            },
+            {
+              "name": "ep",
+              "schema": 2
+            },
+            {
+              "name": "epPawn",
+              "schema": 2
+            },
+            {
+              "name": "quiet",
+              "schema": 4
+            },
+            {
+              "name": "full",
+              "schema": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "adt",
+      "name": "List",
+      "arms": [
+        {
+          "tag": "Nil",
+          "fields": []
+        },
+        {
+          "tag": "Con",
+          "fields": [
+            {
+              "name": "head",
+              "schema": 2
+            },
+            {
+              "name": "tail",
+              "schema": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "u32"
+    },
+    {
+      "kind": "bool"
+    },
+    {
+      "kind": "nat"
+    },
+    {
+      "kind": "adt",
+      "name": "../../core/AI.Choice",
+      "arms": [
+        {
+          "tag": "Choice",
+          "fields": [
+            {
+              "name": "score",
+              "schema": 2
+            },
+            {
+              "name": "id",
+              "schema": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "adt",
+      "name": "../../core/AI.Split",
+      "arms": [
+        {
+          "tag": "Split",
+          "fields": [
+            {
+              "name": "left",
+              "schema": 1
+            },
+            {
+              "name": "right",
+              "schema": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "adt",
+      "name": "Maybe",
+      "arms": [
+        {
+          "tag": "None",
+          "fields": []
+        },
+        {
+          "tag": "Some",
+          "fields": [
+            {
+              "name": "value",
+              "schema": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "adt",
+      "name": "../../core/Model.Action",
+      "arms": [
+        {
+          "tag": "MoveAction",
+          "fields": [
+            {
+              "name": "from",
+              "schema": 2
+            },
+            {
+              "name": "to",
+              "schema": 2
+            },
+            {
+              "name": "promotion",
+              "schema": 2
+            }
+          ]
+        },
+        {
+          "tag": "ShiftAction",
+          "fields": [
+            {
+              "name": "from",
+              "schema": 2
+            },
+            {
+              "name": "to",
+              "schema": 2
+            },
+            {
+              "name": "promotion",
+              "schema": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "adt",
+      "name": "Maybe",
+      "arms": [
+        {
+          "tag": "None",
+          "fields": []
+        },
+        {
+          "tag": "Some",
+          "fields": [
+            {
+              "name": "value",
+              "schema": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "id": 0,
+      "name": "choose",
+      "arity": 2,
+      "inputs": [
+        0,
+        1
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": true,
+      "reachesRequire": true,
+      "maySuspend": true,
+      "hasFork": true
+    },
+    {
+      "id": 1,
+      "name": "../../core/AI.choose",
+      "arity": 2,
+      "inputs": [
+        0,
+        1
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": true,
+      "hasFork": true
+    },
+    {
+      "id": 2,
+      "name": "../../core/AI.choice_id",
+      "arity": 1,
+      "inputs": [
+        5
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 3,
+      "name": "../../core/AI.parallel",
+      "arity": 3,
+      "inputs": [
+        4,
+        1,
+        0
+      ],
+      "output": 5,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": true,
+      "hasFork": true
+    },
+    {
+      "id": 4,
+      "name": "../../core/AI.sequential",
+      "arity": 3,
+      "inputs": [
+        1,
+        0,
+        5
+      ],
+      "output": 5,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 5,
+      "name": "../../core/AI.split",
+      "arity": 1,
+      "inputs": [
+        1
+      ],
+      "output": 6,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 6,
+      "name": "../../core/AI.left",
+      "arity": 1,
+      "inputs": [
+        6
+      ],
+      "output": 1,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 7,
+      "name": "../../core/AI.right",
+      "arity": 1,
+      "inputs": [
+        6
+      ],
+      "output": 1,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 8,
+      "name": "../../core/AI.better",
+      "arity": 2,
+      "inputs": [
+        5,
+        5
+      ],
+      "output": 5,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 9,
+      "name": "../../core/AI.score",
+      "arity": 2,
+      "inputs": [
+        0,
+        2
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 10,
+      "name": "../../core/AI.split_join",
+      "arity": 2,
+      "inputs": [
+        2,
+        6
+      ],
+      "output": 6,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 11,
+      "name": "Bool.pick",
+      "arity": 3,
+      "inputs": null,
+      "output": null,
+      "reasons": [
+        "open_wire_type"
+      ],
+      "eligible": false,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 12,
+      "name": "Bool.and",
+      "arity": 2,
+      "inputs": [
+        3,
+        3
+      ],
+      "output": 3,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 13,
+      "name": "../../core/v2/RuleContracts.expected",
+      "arity": 2,
+      "inputs": [
+        0,
+        2
+      ],
+      "output": 0,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 14,
+      "name": "../../core/AI.board_score",
+      "arity": 4,
+      "inputs": [
+        1,
+        3,
+        2,
+        2
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 15,
+      "name": "../../core/Model.pos_board",
+      "arity": 1,
+      "inputs": [
+        0
+      ],
+      "output": 1,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 16,
+      "name": "../../core/Model.pos_side",
+      "arity": 1,
+      "inputs": [
+        0
+      ],
+      "output": 3,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 17,
+      "name": "../../core/Geometry.in_check",
+      "arity": 2,
+      "inputs": [
+        0,
+        3
+      ],
+      "output": 3,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 18,
+      "name": "../../core/AI.hanging_decoded",
+      "arity": 2,
+      "inputs": [
+        0,
+        7
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 19,
+      "name": "../../core/Model.decode",
+      "arity": 1,
+      "inputs": [
+        2
+      ],
+      "output": 7,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 20,
+      "name": "../../core/v2/RuleContracts.expected_decoded",
+      "arity": 2,
+      "inputs": [
+        0,
+        7
+      ],
+      "output": 0,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 21,
+      "name": "../../core/Model.occupied",
+      "arity": 1,
+      "inputs": [
+        2
+      ],
+      "output": 3,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 22,
+      "name": "../../core/AI.piece_score",
+      "arity": 2,
+      "inputs": [
+        2,
+        2
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 23,
+      "name": "../../core/Model.same_side",
+      "arity": 2,
+      "inputs": [
+        2,
+        3
+      ],
+      "output": 3,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 24,
+      "name": "../../core/Geometry.in_check.got",
+      "arity": 3,
+      "inputs": [
+        0,
+        3,
+        9
+      ],
+      "output": 3,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 25,
+      "name": "../../core/Geometry.find_king",
+      "arity": 2,
+      "inputs": [
+        0,
+        3
+      ],
+      "output": 9,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 26,
+      "name": "../../core/AI.hanging_action",
+      "arity": 2,
+      "inputs": [
+        0,
+        8
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 27,
+      "name": "../../core/Model.decode.in_range",
+      "arity": 2,
+      "inputs": [
+        2,
+        3
+      ],
+      "output": 7,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 28,
+      "name": "../../core/v2/RuleContracts.expected_action",
+      "arity": 2,
+      "inputs": [
+        0,
+        8
+      ],
+      "output": 0,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 29,
+      "name": "../../core/Model.piece_type",
+      "arity": 1,
+      "inputs": [
+        2
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 30,
+      "name": "../../core/AI.center",
+      "arity": 1,
+      "inputs": [
+        2
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 31,
+      "name": "../../core/Model.file_of",
+      "arity": 1,
+      "inputs": [
+        2
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 32,
+      "name": "../../core/Model.rank_of",
+      "arity": 1,
+      "inputs": [
+        2
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 33,
+      "name": "../../core/Model.is_white",
+      "arity": 1,
+      "inputs": [
+        2
+      ],
+      "output": 3,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 34,
+      "name": "../../core/AI.weight",
+      "arity": 1,
+      "inputs": [
+        2
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 35,
+      "name": "../../core/Model.is_pawn",
+      "arity": 1,
+      "inputs": [
+        2
+      ],
+      "output": 3,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 36,
+      "name": "../../core/Model.is_black",
+      "arity": 1,
+      "inputs": [
+        2
+      ],
+      "output": 3,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 37,
+      "name": "../../core/Geometry.attacked",
+      "arity": 3,
+      "inputs": [
+        0,
+        2,
+        3
+      ],
+      "output": 3,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 38,
+      "name": "../../core/Geometry.opposite",
+      "arity": 1,
+      "inputs": [
+        3
+      ],
+      "output": 3,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 39,
+      "name": "../../core/Geometry.find_king.scan",
+      "arity": 3,
+      "inputs": [
+        1,
+        2,
+        3
+      ],
+      "output": 9,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 40,
+      "name": "../../core/AI.hanging_at",
+      "arity": 3,
+      "inputs": [
+        0,
+        2,
+        3
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 41,
+      "name": "../../core/Model.decode_move",
+      "arity": 1,
+      "inputs": [
+        2
+      ],
+      "output": 8,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 42,
+      "name": "../../core/Model.decode_shift",
+      "arity": 1,
+      "inputs": [
+        2
+      ],
+      "output": 8,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 43,
+      "name": "../../core/v2/RuleContracts.expected_board",
+      "arity": 4,
+      "inputs": [
+        4,
+        0,
+        8,
+        2
+      ],
+      "output": 1,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 44,
+      "name": "../../core/v2/RuleContracts.holes",
+      "arity": 2,
+      "inputs": [
+        0,
+        8
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 45,
+      "name": "Bool.not",
+      "arity": 1,
+      "inputs": [
+        3
+      ],
+      "output": 3,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 46,
+      "name": "../../core/v2/RuleContracts.rights",
+      "arity": 2,
+      "inputs": [
+        0,
+        8
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 47,
+      "name": "../../core/v2/RuleContracts.ep_target",
+      "arity": 2,
+      "inputs": [
+        0,
+        8
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 48,
+      "name": "../../core/v2/RuleContracts.ep_victim",
+      "arity": 2,
+      "inputs": [
+        0,
+        8
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 49,
+      "name": "../../core/v2/RuleContracts.quiet",
+      "arity": 2,
+      "inputs": [
+        0,
+        8
+      ],
+      "output": 4,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 50,
+      "name": "../../core/v2/RuleContracts.full",
+      "arity": 1,
+      "inputs": [
+        0
+      ],
+      "output": 4,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 51,
+      "name": "../../core/Model.present",
+      "arity": 2,
+      "inputs": [
+        2,
+        2
+      ],
+      "output": 3,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 52,
+      "name": "../../core/Model.pos_holes",
+      "arity": 1,
+      "inputs": [
+        0
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 53,
+      "name": "../../core/Geometry.attacked_pawn",
+      "arity": 3,
+      "inputs": [
+        0,
+        2,
+        3
+      ],
+      "output": 3,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 54,
+      "name": "../../core/Geometry.scan_knight",
+      "arity": 3,
+      "inputs": [
+        0,
+        2,
+        3
+      ],
+      "output": 3,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 55,
+      "name": "../../core/Geometry.scan_king",
+      "arity": 3,
+      "inputs": [
+        0,
+        2,
+        3
+      ],
+      "output": 3,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 56,
+      "name": "../../core/Geometry.rays",
+      "arity": 4,
+      "inputs": [
+        0,
+        2,
+        3,
+        3
+      ],
+      "output": 3,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 57,
+      "name": "../../core/Model.board_get",
+      "arity": 2,
+      "inputs": [
+        1,
+        2
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 58,
+      "name": "../../core/Model.decode_promotion",
+      "arity": 1,
+      "inputs": [
+        2
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 59,
+      "name": "../../core/v2/RuleContracts.cell",
+      "arity": 3,
+      "inputs": [
+        0,
+        8,
+        2
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 60,
+      "name": "../../core/Model.macro_mask",
+      "arity": 1,
+      "inputs": [
+        2
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 61,
+      "name": "../../core/Model.pos_rights",
+      "arity": 1,
+      "inputs": [
+        0
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 62,
+      "name": "Bool.to_u32",
+      "arity": 1,
+      "inputs": [
+        3
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 63,
+      "name": "../../core/v2/RuleContracts.right_survives",
+      "arity": 4,
+      "inputs": [
+        0,
+        8,
+        2,
+        3
+      ],
+      "output": 3,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 64,
+      "name": "../../core/v2/RuleContracts.at",
+      "arity": 2,
+      "inputs": [
+        0,
+        2
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 65,
+      "name": "../../core/Geometry.abs_diff",
+      "arity": 2,
+      "inputs": [
+        2,
+        2
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 66,
+      "name": "../../core/Model.sq",
+      "arity": 2,
+      "inputs": [
+        2,
+        2
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 67,
+      "name": "../../core/v2/RuleContracts.ep",
+      "arity": 3,
+      "inputs": [
+        0,
+        2,
+        2
+      ],
+      "output": 3,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 68,
+      "name": "../../core/Model.pos_quiet",
+      "arity": 1,
+      "inputs": [
+        0
+      ],
+      "output": 4,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 69,
+      "name": "../../core/Model.pos_full",
+      "arity": 1,
+      "inputs": [
+        0
+      ],
+      "output": 4,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 70,
+      "name": "../../core/Model.present.in_range",
+      "arity": 3,
+      "inputs": [
+        2,
+        2,
+        3
+      ],
+      "output": 3,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 71,
+      "name": "../../core/Geometry.pawn_square_ok",
+      "arity": 3,
+      "inputs": [
+        0,
+        2,
+        3
+      ],
+      "output": 3,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 72,
+      "name": "../../core/Geometry.scan_knight.go",
+      "arity": 6,
+      "inputs": [
+        4,
+        0,
+        2,
+        3,
+        2,
+        3
+      ],
+      "output": 3,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 73,
+      "name": "../../core/Geometry.scan_king.go",
+      "arity": 6,
+      "inputs": [
+        4,
+        0,
+        2,
+        3,
+        2,
+        3
+      ],
+      "output": 3,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 74,
+      "name": "../../core/Geometry.rays.go",
+      "arity": 7,
+      "inputs": [
+        4,
+        0,
+        2,
+        3,
+        3,
+        2,
+        3
+      ],
+      "output": 3,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 75,
+      "name": "../../core/Model.board_get.go",
+      "arity": 3,
+      "inputs": [
+        1,
+        2,
+        3
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 76,
+      "name": "../../core/v2/RuleContracts.transported",
+      "arity": 4,
+      "inputs": [
+        0,
+        2,
+        2,
+        2
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 77,
+      "name": "../../core/v2/RuleContracts.castle_shape",
+      "arity": 3,
+      "inputs": [
+        0,
+        2,
+        2
+      ],
+      "output": 3,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 78,
+      "name": "../../core/v2/RuleContracts.rook_destination",
+      "arity": 2,
+      "inputs": [
+        0,
+        2
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 79,
+      "name": "../../core/v2/RuleContracts.rook_source",
+      "arity": 2,
+      "inputs": [
+        0,
+        2
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 80,
+      "name": "../../core/Model.pos_ep_pawn",
+      "arity": 1,
+      "inputs": [
+        0
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 81,
+      "name": "../../core/Model.macro_of",
+      "arity": 1,
+      "inputs": [
+        2
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 82,
+      "name": "../../core/Model.square_in_macro",
+      "arity": 2,
+      "inputs": [
+        2,
+        2
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 83,
+      "name": "../../core/Model.pos_ep",
+      "arity": 1,
+      "inputs": [
+        0
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 84,
+      "name": "../../core/Geometry.board_get",
+      "arity": 2,
+      "inputs": [
+        1,
+        2
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 85,
+      "name": "../../core/Geometry.square_piece_ok",
+      "arity": 4,
+      "inputs": [
+        0,
+        2,
+        3,
+        2
+      ],
+      "output": 3,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 86,
+      "name": "../../core/Geometry.knight_source",
+      "arity": 2,
+      "inputs": [
+        2,
+        2
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 87,
+      "name": "../../core/Geometry.neighbor",
+      "arity": 2,
+      "inputs": [
+        2,
+        2
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 88,
+      "name": "../../core/Geometry.ray",
+      "arity": 5,
+      "inputs": [
+        0,
+        2,
+        3,
+        2,
+        3
+      ],
+      "output": 3,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 89,
+      "name": "../../core/Model.encode_piece",
+      "arity": 2,
+      "inputs": [
+        3,
+        2
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 90,
+      "name": "../../core/v2/RuleContracts.last",
+      "arity": 2,
+      "inputs": [
+        0,
+        2
+      ],
+      "output": 3,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 91,
+      "name": "../../core/Model.macro_file",
+      "arity": 1,
+      "inputs": [
+        2
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 92,
+      "name": "../../core/Model.macro_rank",
+      "arity": 1,
+      "inputs": [
+        2
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 93,
+      "name": "../../core/Geometry.knight_case",
+      "arity": 3,
+      "inputs": [
+        2,
+        2,
+        2
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 94,
+      "name": "../../core/Geometry.neighbor_case",
+      "arity": 3,
+      "inputs": [
+        2,
+        2,
+        2
+      ],
+      "output": 2,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    },
+    {
+      "id": 95,
+      "name": "../../core/Geometry.ray.go",
+      "arity": 7,
+      "inputs": [
+        4,
+        0,
+        2,
+        3,
+        2,
+        3,
+        2
+      ],
+      "output": 3,
+      "reasons": [],
+      "eligible": true,
+      "reachesMark": false,
+      "reachesPolicy": false,
+      "reachesRequire": false,
+      "maySuspend": false,
+      "hasFork": false
+    }
+  ],
+  "sites": [
+    {
+      "id": 0,
+      "function": "../../core/AI.parallel",
+      "line": 99,
+      "children": [
+        3,
+        3
+      ]
+    }
+  ],
+  "exports": {
+    "choose": 0
+  },
+  "artifacts": {
+    "entry": "index.mjs",
+    "program": "bend-77d80270fe5ce1c4.program.mjs",
+    "worker": "bend-77d80270fe5ce1c4.worker.mjs",
+    "runtime": "bend-77d80270fe5ce1c4.runtime.mjs",
+    "manifest": "manifest.json"
+  }
+}
