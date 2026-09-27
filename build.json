@@ -1,8 +1,8 @@
 {
   "schema": "rift-bend-browser/2",
-  "builtAt": "2026-09-27T13:38:08.522Z",
-  "version": "ad9b34c4ac0da2d7cd32",
-  "sourceRevision": "44dc9640929c37d119fabc3980d6d51631257d25",
+  "builtAt": "2026-09-27T16:42:45.307Z",
+  "version": "85397955504c1bb54d3a",
+  "sourceRevision": "f8a7fbf911271cc297055f03656c9c790b307670",
   "sourceDirty": false,
   "draft": false,
   "v2Preview": true,
@@ -39,14 +39,14 @@
     "target": "browser JavaScript; native parallelism not yet measured"
   },
   "files": {
-    "index.html": "3b914ccf50c582de32da2857d81558e8431cf523f9d9ac20969fa029d4b3b3a1",
-    "host-1n9jszf4.js": "03ce113262bb6a5cf29b521aad100158feea04152437472a343f3dd43e3be5e6",
-    "worker-v2-eqdja6w6.js": "8d8f2831a0d240a257305ea2966b1f27990d947cdd485d3f1bcc622eece74e0a",
+    "index.html": "0a06d9c1d734af2cc641b5b59e83c0cb61ebe55413f006d1d6e9dd8e339aea96",
+    "host-hcpv37yt.js": "4a31952c54df1c2e1c42c17d2e80bd5bf1e8c6c9211e7339fa0ec11acde36292",
+    "worker-v2-k2g7y88m.js": "4b294dcf66b5d28ed54e3f23ba038bedf29c7df349d2116c28139e3326f4bb8c",
     "style-01f82ab8949f.css": "01f82ab8949f0755c6c37e681532ed3196d4b2c5fdb973dd3ef3aa9837cd610a",
     "THIRD_PARTY_NOTICES.txt": "856b99c1f7eec339bd992d29410cc376e0a904d3ee45b11a7495021d37d40e12",
     "Bend-Apache-2.0.txt": "78418ed3cfa4c3f320f827a96ed83349ef9e1af6dc4430b256a0ba2037c42615",
     "Rift-Atlas-Sans-OFL.txt": "2af94f4fb533be8fa23282eb33e08ca311ddf47c2f32777e2040b282deeec65c",
-    "sprite-helper-x42n6gp0.js": "e0957fafe9a597d76121591dea4a5d838afbb77b786263b21731622fcdefa80e",
+    "sprite-helper-azhtq005.js": "9510ab7934532006790026b197ea000937f70b53c7d1e050815bd88affcfa980",
     "worker-libs/bot/index.mjs": "04fe288b2fbb31a01c6121d3b7053e674cd25392f655e24aaf097b989bd11dea",
     "worker-libs/bot/bend-77d80270fe5ce1c4.program.mjs": "b4dcb6272d156557d6a6d0d39d7c1ccbc6783162f4f6f431a38e7b8c6a9dc61d",
     "worker-libs/bot/bend-77d80270fe5ce1c4.worker.mjs": "de6f92d12533a51bfc1996427a6432a74c00912ef83b36ff110a88702cccc952",
@@ -59,6 +59,6 @@
     "assets/pieces-fast-0.rga": "92355991cbf99556a73754fd904ec53a13f8e05fe1d1837d0696ebe6cdd7ad12",
     "assets/pieces-fast-1.rga": "35e898841546ea10655c08ec763cb7793a038194c6058f9cbb312155da06ebeb",
     "assets/pieces-fast-2.rga": "06aefb53eb2bc4d982add3690a3c0fbdb82dcaf9639797b374e908a49992e6eb",
-    "sw.js": "7f1c186b68d02d6c68f3a7c386ad425f238bc1334b43777479c167cbf98d2f39"
+    "sw.js": "e222d077f74898711bf3a166e5c66f5249a3705f208253c825869c6fd4453fc4"
   }
 }
