@@ -1,8 +1,8 @@
 {
   "schema": "rift-bend-browser/2",
-  "builtAt": "2026-09-28T09:55:32.384Z",
-  "version": "817dfa63932dd6ccf4b4",
-  "sourceRevision": "cafc934d41b4e2511043634267904c002a824197",
+  "builtAt": "2026-09-28T14:42:49.867Z",
+  "version": "c7056b49df1aa08b4048",
+  "sourceRevision": "a3a57b9910ddb8fd84c026f8f6b0eae073f6384b",
   "sourceDirty": false,
   "draft": false,
   "v2Preview": true,
@@ -39,8 +39,8 @@
     "target": "browser JavaScript; native parallelism not yet measured"
   },
   "files": {
-    "index.html": "85345ea84771cd72d40bb6bb618a9e9a05a85909ac661198adae384faa33059b",
-    "host-3bfd18sr.js": "66af0bee47e349428035d979393918be605f0bf723e83e4ba45a95e32554c9c6",
+    "index.html": "b3b41e591f400f3607ba97c67eadf42a6530105bab8869270077a7b3744a2ea0",
+    "host-w890phh4.js": "95bdebff290d82eb7a707886033b86c9b0e09391c285f9990b8509fceb6ae071",
     "worker-v2-n9cx1n2a.js": "bc1b9bb381ea8a06cb663c760bbe41866ffd88a243a2e3a3f1699646bd07c83c",
     "style-01f82ab8949f.css": "01f82ab8949f0755c6c37e681532ed3196d4b2c5fdb973dd3ef3aa9837cd610a",
     "THIRD_PARTY_NOTICES.txt": "856b99c1f7eec339bd992d29410cc376e0a904d3ee45b11a7495021d37d40e12",
@@ -59,6 +59,6 @@
     "assets/pieces-fast-0.rga": "92355991cbf99556a73754fd904ec53a13f8e05fe1d1837d0696ebe6cdd7ad12",
     "assets/pieces-fast-1.rga": "35e898841546ea10655c08ec763cb7793a038194c6058f9cbb312155da06ebeb",
     "assets/pieces-fast-2.rga": "06aefb53eb2bc4d982add3690a3c0fbdb82dcaf9639797b374e908a49992e6eb",
-    "sw.js": "c5f2d5fa2fe2453129bd7cb20072f7f01a2780290b20fff6f4bab3300295c3c4"
+    "sw.js": "da3792af26f4074fe304ac24f192a82c6675c017cadc061c23e8fdb6ce430b07"
   }
 }
