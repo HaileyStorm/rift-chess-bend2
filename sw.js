@@ -1,6 +1,6 @@
 /* A separate scope and cache from the production Three.js game. */
-const CACHE = 'rift-bend-v1-57e13ede9386bf486be8';
-const ASSETS = ["./","./build.json","./Bend-Apache-2.0.txt","./Rift-Atlas-Sans-OFL.txt","./THIRD_PARTY_NOTICES.txt","./assets/LICENSES.md","./assets/observatory-astral.rga","./assets/observatory-stone.rga","./assets/pieces-fast-0.rga","./assets/pieces-fast-1.rga","./assets/pieces-fast-2.rga","./assets/rift-observatory-font.rga","./host-m42r9mmp.js","./index.html","./sprite-helper-4c345a03.js","./style-01f82ab8949f.css","./worker-libs/bot/bend-77d80270fe5ce1c4.program.mjs","./worker-libs/bot/bend-77d80270fe5ce1c4.runtime.mjs","./worker-libs/bot/bend-77d80270fe5ce1c4.worker.mjs","./worker-libs/bot/index.mjs","./worker-libs/bot/manifest.json","./worker-v2-4nrdkxyn.js"];
+const CACHE = 'rift-bend-v1-34c9788cba8683f6f50a';
+const ASSETS = ["./","./build.json","./Bend-Apache-2.0.txt","./Rift-Atlas-Sans-OFL.txt","./THIRD_PARTY_NOTICES.txt","./assets/LICENSES.md","./assets/observatory-astral.rga","./assets/observatory-stone.rga","./assets/pieces-fast-0.rga","./assets/pieces-fast-1.rga","./assets/pieces-fast-2.rga","./assets/rift-observatory-font.rga","./host-226fxsh7.js","./index.html","./sprite-helper-4c345a03.js","./style-01f82ab8949f.css","./worker-libs/bot/bend-77d80270fe5ce1c4.program.mjs","./worker-libs/bot/bend-77d80270fe5ce1c4.runtime.mjs","./worker-libs/bot/bend-77d80270fe5ce1c4.worker.mjs","./worker-libs/bot/index.mjs","./worker-libs/bot/manifest.json","./worker-v2-rggnsrft.js"];
 self.addEventListener('install', event => event.waitUntil((async () => {
   const cache = await caches.open(CACHE);
   await cache.addAll(ASSETS.map(file => new Request(new URL(file, self.location.href), { cache: 'reload' })));
