@@ -1,8 +1,8 @@
 {
   "schema": "rift-bend-browser/2",
-  "builtAt": "2026-09-28T22:46:10.523Z",
-  "version": "b5022e026e9bf6904c29",
-  "sourceRevision": "c986e3ffbbf747504dccb7315d8b0bce69554894",
+  "builtAt": "2026-09-29T01:13:06.401Z",
+  "version": "12e233fd9c7ca2c09fe4",
+  "sourceRevision": "c8f8eee0e75b45867ec3b0b2046f601d32f17e05",
   "sourceDirty": false,
   "draft": false,
   "v2Preview": true,
@@ -24,6 +24,13 @@
       ]
     }
   },
+  "preparedGround": {
+    "asset": "assets/ground-initial-7acd8b71c260.json",
+    "assetSha256": "7acd8b71c26095d7aa359ceed71073b0924d4ec6290603231c3972af3d485eb9",
+    "assetBytes": 7347974,
+    "metadata": "assets/ground-initial-7acd8b71c260.meta.json",
+    "metadataSha256": "fc6ccdcfa737e90e84f9b7b225643e9c20a7042fbd44f20fdd026d2e71c33305"
+  },
   "application": "Bend-owned rules, UI, bitmap text, input policy, codec, replay, animation and PCM synthesis; browser IO transport only",
   "semanticSha256": "c8dcce907c3c3a6f70e9dfa12a74966879f30ea338b2734637c9acf4579943bf",
   "parentSemanticSha256": "8a1eb013c498e8e065265ef5dfa0327ae908a3cb4dde58dae9f324f9e924118b",
@@ -39,14 +46,14 @@
     "target": "browser JavaScript; native parallelism not yet measured"
   },
   "files": {
-    "index.html": "62a2e678b0f7cb6a9d07d0d09c98a9cffb21d4512c33b6565efeee2945a98584",
-    "host-6nj7agtc.js": "b1c0aa696c3af81627d1bd4a46e83b90fe5b802f106f06e733029a98bb02833b",
-    "worker-v2-1jfbv4ts.js": "40a666d7738853e0a497e183c0e8dc48d1aeb31445beb483f7b5ee990d1b00f2",
+    "index.html": "81aebeff610603df214339fc71bd7f256d4dce564a6d7deed9319e15d5a8ceff",
+    "host-9mcza5am.js": "fbc366b4c355b5d3744d9619f196819f48a72e15f122ef4504c745d8662a1150",
+    "worker-v2-ex6t0kk6.js": "65a8b11c741dee60d05258499fb749f76d98a6370613afbf042afc8618b42081",
     "style-01f82ab8949f.css": "01f82ab8949f0755c6c37e681532ed3196d4b2c5fdb973dd3ef3aa9837cd610a",
     "THIRD_PARTY_NOTICES.txt": "856b99c1f7eec339bd992d29410cc376e0a904d3ee45b11a7495021d37d40e12",
     "Bend-Apache-2.0.txt": "78418ed3cfa4c3f320f827a96ed83349ef9e1af6dc4430b256a0ba2037c42615",
     "Rift-Atlas-Sans-OFL.txt": "2af94f4fb533be8fa23282eb33e08ca311ddf47c2f32777e2040b282deeec65c",
-    "sprite-helper-2bqjsq0w.js": "758a0f754803902710fa1786a517a38c742e0f4e03396650867292b4706fbf58",
+    "sprite-helper-aj6drrz2.js": "2dd842402d367144bb3f6cf4e452ce88542d0a6e7658b9436b1d691668f196b5",
     "worker-libs/bot/index.mjs": "04fe288b2fbb31a01c6121d3b7053e674cd25392f655e24aaf097b989bd11dea",
     "worker-libs/bot/bend-77d80270fe5ce1c4.program.mjs": "b4dcb6272d156557d6a6d0d39d7c1ccbc6783162f4f6f431a38e7b8c6a9dc61d",
     "worker-libs/bot/bend-77d80270fe5ce1c4.worker.mjs": "de6f92d12533a51bfc1996427a6432a74c00912ef83b36ff110a88702cccc952",
@@ -59,6 +66,8 @@
     "assets/pieces-fast-0.rga": "92355991cbf99556a73754fd904ec53a13f8e05fe1d1837d0696ebe6cdd7ad12",
     "assets/pieces-fast-1.rga": "35e898841546ea10655c08ec763cb7793a038194c6058f9cbb312155da06ebeb",
     "assets/pieces-fast-2.rga": "06aefb53eb2bc4d982add3690a3c0fbdb82dcaf9639797b374e908a49992e6eb",
-    "sw.js": "5656e23186b6860fc96746b01ec20daa39a804614cdcc23adc58d62b31d332d3"
+    "assets/ground-initial-7acd8b71c260.json": "7acd8b71c26095d7aa359ceed71073b0924d4ec6290603231c3972af3d485eb9",
+    "assets/ground-initial-7acd8b71c260.meta.json": "fc6ccdcfa737e90e84f9b7b225643e9c20a7042fbd44f20fdd026d2e71c33305",
+    "sw.js": "4c711c2970835f25677fe30a79dc2cf3aae967771359f382353ea51c85276286"
   }
 }

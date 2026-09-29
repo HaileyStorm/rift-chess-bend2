@@ -4,8 +4,8 @@
 
 Static distribution only. [Source, local Bend guide, laws, proofs and verification](https://github.com/HaileyStorm/rift-chess/tree/codex/visual-overhaul/bend2) live in the main project checkout. The exact build source and asset hashes are in `build.json`.
 
-Build `57e13ede9386bf486be8` comes from clean source commit
-`041932bd367a2d043a4337f9a86c17b650774cdc` and pinned Bend 2.0.27. The rules,
+Build `12e233fd9c7ca2c09fe4` comes from clean source commit
+`c8f8eee0e75b45867ec3b0b2046f601d32f17e05` and pinned Bend 2.0.27. The rules,
 opponent, picking, camera, board, pieces, menus, anti-aliased bitmap text,
 animation, input policy, record codec and synthesized sound are Bend code.
 The browser adapter transports events and assets, presents Bend pixels on
@@ -14,41 +14,25 @@ accessibility. It contains no chess or visible UI policy. A source-bound Bend
 bot library and a Bend scene renderer run in static module workers; their
 assets are included in the offline service-worker cache.
 
-The View controls sit beside the desktop board and zoom from the default
-115% through 130%. A compact 256-pixel motion tree retains piece/hole detail
-while reducing browser orbit traversal; a camera-only 450 ms quiet window
-avoids launching intermediate ornate sprite jobs during successive view
-inputs. Topology changes such as Shift Undo refine without that delay. These
-are local responsiveness improvements, not an owner-approved visual finish.
-Settled tiles use one owner for exposed vertical faces at the outer board and
-open rift boundaries, with visible fine seams on all four tile-top edges.
-Active orbit also clips camera-facing exposed walls to the present-tile mask.
-The default pitch is steeper; the authored sprites are now 1.22 projected
-pitches tall and seated 0.16 sprite widths lower than square center, with a
-matching contact shadow. Exposed faces receive a restrained brass-material
-tint for separation against the observatory. The exact older saved
-factory view migrates on load, while other saved angles remain unchanged. The
-lightweight in-motion board uses simpler top shading until its asynchronous
-settled refinement. A 288-view plus 160-variant sampled wall/top gate and
-13-group local Chrome game scenario passed; owner visual acceptance and
-cross-device performance remain open.
-The rendered selection and observatory themes remain available while changing
-the camera. Older hashed browser assets and
-content-addressed CLI C exports remain here
-for returning clients and historical provenance. An earlier shared-source
-NativeV2 build ran on real Linux X11 CPU and CUDA devices, with exact image
-parity for its tested move; routed PCM and a saved-game relaunch were also
-observed. A later exact-source CPU package/X11/PCM/restart result and RTX 5090
-pilot belong to the previous `68411c4` orbit-wall source, not this visual
-revision. The GPU-on pilot retained a 250 ms synthetic deselection failure;
-its observer-only timing diagnostic did not turn that gate green. The CPU
-emitter requires an interim 88 GiB host/visible-cgroup headroom floor based on its
-reported 69 GiB peak. This source's fresh CPU package,
-GUI/PCM/restart and GPU runtime parity remain open. Bend 2.0.28 remains an
-unadopted candidate; a separate local ABI bridge and browser/worker probes do
-not change this published 2.0.27 pin.
-This preview does not replace the
-original Three.js game. GPU results and their limits are documented with the
-source; they do not establish improved delivered game FPS.
+The default camera is 345° yaw, 67° pitch and 115% zoom; Front remains 65°.
+Tile side faces cover the board perimeter and rifts. Pieces sit lower on the
+squares with a contact shadow, and alpha-bound sprite drawing preserves their
+pixels while reducing work. A source-bound, precomputed detailed ground is
+used only for the initial camera, topology, theme and exact decoded artwork;
+other views or altered/missing artwork use the original Bend renderer. The
+additional 7.35 MB image is hashed and included in the offline cache. Older
+hashed browser assets and content-addressed CLI C exports remain for returning
+clients and provenance.
+
+The exact clean build passed 24 local rendered Chrome scenarios and 685 checks
+with zero defects, plus paired initial/move/Front pixel identity against the
+prior build, invalid-resource fallback and controlled-offline checks. The
+initial-ground worker phase improved locally, but first-visit timing varies and
+low-memory/cross-device performance is not established. A reported Linux
+CPU-only source/package/X.Org/PCM/save-restart result applies to the unchanged
+native inputs from `c986e3f`; its artifacts were not transferred here. The
+original CUDA-on 250 ms deselection failure remains terminal. Physical audio,
+native GPU parity, full human visual acceptance and the Bend 2.0.28 pin
+amendment remain open. This preview does not replace the original Three.js game.
 
 See `THIRD_PARTY_NOTICES.txt` and `Bend-Apache-2.0.txt`.
