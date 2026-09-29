@@ -4,8 +4,8 @@
 
 Static distribution only. [Source, local Bend guide, laws, proofs and verification](https://github.com/HaileyStorm/rift-chess/tree/codex/visual-overhaul/bend2) live in the main project checkout. The exact build source and asset hashes are in `build.json`.
 
-Build `12e233fd9c7ca2c09fe4` comes from clean source commit
-`c8f8eee0e75b45867ec3b0b2046f601d32f17e05` and pinned Bend 2.0.27. The rules,
+Build `e788562833af84fd6840` comes from clean source commit
+`9d4a532df368006ef5464dd55888a593ed30e520` and pinned Bend 2.0.27. The rules,
 opponent, picking, camera, board, pieces, menus, anti-aliased bitmap text,
 animation, input policy, record codec and synthesized sound are Bend code.
 The browser adapter transports events and assets, presents Bend pixels on
@@ -22,15 +22,18 @@ used only for the initial camera, topology, theme and exact decoded artwork;
 other views or altered/missing artwork use the original Bend renderer. The
 additional 7.35 MB image is hashed and included in the offline cache. Older
 hashed browser assets and content-addressed CLI C exports remain for returning
-clients and provenance.
+clients and provenance. During active orbit, Black's compact Bend glyphs now
+use a thin brass edge behind navy to separate them from dark squares and the
+rift; White glyphs and the settled authored sprites are unchanged. This adds
+drawing work during orbit, and owner visual acceptance remains open.
 
 The exact clean build passed 24 local rendered Chrome scenarios and 685 checks
-with zero defects, plus paired initial/move/Front pixel identity against the
-prior build, invalid-resource fallback and controlled-offline checks. The
+with zero defects, plus paired initial/move/Front settled-pixel identity against
+the prior build and cool/warm orbit inspection. The
 initial-ground worker phase improved locally, but first-visit timing varies and
-low-memory/cross-device performance is not established. A reported Linux
-CPU-only source/package/X.Org/PCM/save-restart result applies to the unchanged
-native inputs from `c986e3f`; its artifacts were not transferred here. The
+low-memory/cross-device performance is not established. The reported Linux
+CPU-only source/package/X.Org/PCM/save-restart result was for older native
+inputs; a distinct current-source CPU-only retest has been requested. The
 original CUDA-on 250 ms deselection failure remains terminal. Physical audio,
 native GPU parity, full human visual acceptance and the Bend 2.0.28 pin
 amendment remain open. This preview does not replace the original Three.js game.
