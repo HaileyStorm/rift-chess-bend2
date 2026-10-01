@@ -1,8 +1,8 @@
 {
   "schema": "rift-bend-browser/2",
-  "builtAt": "2026-10-01T10:33:36.150Z",
-  "version": "da8013ed39be761d1671",
-  "sourceRevision": "fa58ec079faae6e55af79b4f7bb471acc2576090",
+  "builtAt": "2026-10-01T11:43:08.268Z",
+  "version": "8235c81a27d4030e143b",
+  "sourceRevision": "45d7041ea1e11db48017db96b886b24b60d501d3",
   "sourceDirty": false,
   "draft": false,
   "v2Preview": true,
@@ -29,7 +29,7 @@
     "assetSha256": "7acd8b71c26095d7aa359ceed71073b0924d4ec6290603231c3972af3d485eb9",
     "assetBytes": 7347974,
     "metadata": "assets/ground-initial-7acd8b71c260.meta.json",
-    "metadataSha256": "81ee85500e24091c1675641745112160dc384b03f1ac2d1b3b2b57fd4d3602ab"
+    "metadataSha256": "56f613821a470ea0c80d00b62d9ff1a30e5c42fa20c1fe113c242800ee5efffc"
   },
   "application": "Bend-owned rules, UI, bitmap text, input policy, codec, replay, animation and PCM synthesis; browser IO transport only",
   "semanticSha256": "c8dcce907c3c3a6f70e9dfa12a74966879f30ea338b2734637c9acf4579943bf",
@@ -46,9 +46,9 @@
     "target": "browser JavaScript; native parallelism not yet measured"
   },
   "files": {
-    "index.html": "f924e46635d73cae7bafe535bb11f7a46242093acab807d3126dda48859871bd",
-    "host-wh9fe0rm.js": "aa1e4a0be5d89734aed901965ef1239463505c253eafe9cdeb4a4382b9ed4cd6",
-    "worker-v2-whvetp28.js": "46677a68e9e04241889c770659b70069a49fade033284f3beec031085a7f4d0a",
+    "index.html": "35e6752d2840d0a8cb643da5c9e21c526bb4bb07375d9810cb079c50d826f01e",
+    "host-2jqck92c.js": "7d9df607ab25f17900bb21eef5620dc6e608b7c41ac0b0e1b9078f9d4b66986b",
+    "worker-v2-1xr1kxfd.js": "6163798c8ea46ac6806f11158076234ebc680afdb27439111a0ea78d5e3dcb90",
     "style-01f82ab8949f.css": "01f82ab8949f0755c6c37e681532ed3196d4b2c5fdb973dd3ef3aa9837cd610a",
     "THIRD_PARTY_NOTICES.txt": "856b99c1f7eec339bd992d29410cc376e0a904d3ee45b11a7495021d37d40e12",
     "Bend-Apache-2.0.txt": "78418ed3cfa4c3f320f827a96ed83349ef9e1af6dc4430b256a0ba2037c42615",
@@ -67,7 +67,7 @@
     "assets/pieces-fast-1.rga": "35e898841546ea10655c08ec763cb7793a038194c6058f9cbb312155da06ebeb",
     "assets/pieces-fast-2.rga": "06aefb53eb2bc4d982add3690a3c0fbdb82dcaf9639797b374e908a49992e6eb",
     "assets/ground-initial-7acd8b71c260.json": "7acd8b71c26095d7aa359ceed71073b0924d4ec6290603231c3972af3d485eb9",
-    "assets/ground-initial-7acd8b71c260.meta.json": "81ee85500e24091c1675641745112160dc384b03f1ac2d1b3b2b57fd4d3602ab",
-    "sw.js": "22581d4a02a44357ad51b77710f76dcb7aea76220127c62a13bd0172718604e5"
+    "assets/ground-initial-7acd8b71c260.meta.json": "56f613821a470ea0c80d00b62d9ff1a30e5c42fa20c1fe113c242800ee5efffc",
+    "sw.js": "ebfee90558c8e0a5022113a90a43695efe35f28b7d728756c12628162853f96b"
   }
 }

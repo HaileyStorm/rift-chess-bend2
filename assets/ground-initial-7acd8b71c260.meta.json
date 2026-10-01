@@ -3,9 +3,9 @@
   "mode": "source-bound-default-ground",
   "selected": {
     "sceneOutputSha256": "27515c02c88f5da93e8de2074862bf5edd502465603253ac017b1a5a474ff172",
-    "sceneBindingSha256": "5cdf3ac61c098d4a3151e194486daf14a3b64f27fe306aaa8ed4c3ee50a9d15f",
-    "controllerOutputSha256": "383d114454432289d0333ad5e97800aeb7a263b4636776c4bf2fab9c8560d07c",
-    "controllerBindingSha256": "04304cd9578d066bb0d7052c71ed2d0012a30f244689a6a15a4ca154f166e850"
+    "sceneBindingSha256": "ee2d2fcbc389814ca623b4cccec68b6afea51d413c6e5df6b0387aa69dbdcc31",
+    "controllerOutputSha256": "fba79adc932322409ae8222b9a9ce53552d9fd8f735ce0d42aacdf2a33528562",
+    "controllerBindingSha256": "dca0a18c015854e259041656b4b65a776826e2c2694d4a428d8269ef2f3ca0ce"
   },
   "plate": {
     "id": "observatory-astral",

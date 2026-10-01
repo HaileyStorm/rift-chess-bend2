@@ -4,8 +4,8 @@
 
 Static distribution only. [Source, local Bend guide, laws, proofs and verification](https://github.com/HaileyStorm/rift-chess/tree/codex/visual-overhaul/bend2) live in the main project checkout. The exact build source and asset hashes are in `build.json`.
 
-Build `da8013ed39be761d1671` comes from clean source commit
-`fa58ec079faae6e55af79b4f7bb471acc2576090` and pinned Bend 2.0.27. The rules,
+Build `8235c81a27d4030e143b` comes from clean source commit
+`45d7041ea1e11db48017db96b886b24b60d501d3` and pinned Bend 2.0.27. The rules,
 opponent, picking, camera, board, pieces, menus, anti-aliased bitmap text,
 animation, input policy, record codec and synthesized sound are Bend code.
 The browser adapter transports events and assets, presents Bend pixels on
@@ -31,9 +31,16 @@ visible foot could cross the adjacent-square picking boundary at minimum
 camera pitch. This adds drawing work during orbit, and owner visual acceptance
 remains open.
 
-The height-only draft passed 24 local rendered Chrome scenarios and 689 checks
-with zero defects. The clean build has byte-identical playable files and passed
-a separately bound local Chrome selection/move/orbit/refinement/mobile smoke.
+The picker and the legacy piece renderer now both suppress a stale occupied
+entry beneath a missing rift tile, matching the detailed sprite renderer's
+visibility rule. This is a narrow invalid-state consistency fix; the detailed
+atlas still needs a presentation-bound alpha hit path before lowering sprite
+bases or claiming exact rendered-pixel picking at all angles.
+
+This exact clean build passed 24 local rendered Chrome scenarios and 689 checks
+with zero defects, plus a separate bound Chrome selection/move/orbit/refinement/
+mobile smoke. These are local results; hosted bytes and interactions require
+their own post-publication verification.
 The
 initial-ground worker phase improved locally, but first-visit timing varies and
 low-memory/cross-device performance is not established. Earlier Linux
