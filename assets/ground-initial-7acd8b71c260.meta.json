@@ -2,8 +2,8 @@
   "schema": "rift-bend-prepared-ground/1",
   "mode": "source-bound-default-ground",
   "selected": {
-    "sceneOutputSha256": "9aa218cab2dc6873098bbf781f370ee04d5c3033e1e5e480bf3cba27d073c82c",
-    "sceneBindingSha256": "bf3a5a79a2e746beab06dedc851c130e9b13024ec2fbd357ecc2a696346ebd8d",
+    "sceneOutputSha256": "27515c02c88f5da93e8de2074862bf5edd502465603253ac017b1a5a474ff172",
+    "sceneBindingSha256": "5cdf3ac61c098d4a3151e194486daf14a3b64f27fe306aaa8ed4c3ee50a9d15f",
     "controllerOutputSha256": "383d114454432289d0333ad5e97800aeb7a263b4636776c4bf2fab9c8560d07c",
     "controllerBindingSha256": "04304cd9578d066bb0d7052c71ed2d0012a30f244689a6a15a4ca154f166e850"
   },

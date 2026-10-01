@@ -1,8 +1,8 @@
 {
   "schema": "rift-bend-browser/2",
-  "builtAt": "2026-09-29T03:29:44.229Z",
-  "version": "e788562833af84fd6840",
-  "sourceRevision": "9d4a532df368006ef5464dd55888a593ed30e520",
+  "builtAt": "2026-10-01T10:33:36.150Z",
+  "version": "da8013ed39be761d1671",
+  "sourceRevision": "fa58ec079faae6e55af79b4f7bb471acc2576090",
   "sourceDirty": false,
   "draft": false,
   "v2Preview": true,
@@ -29,7 +29,7 @@
     "assetSha256": "7acd8b71c26095d7aa359ceed71073b0924d4ec6290603231c3972af3d485eb9",
     "assetBytes": 7347974,
     "metadata": "assets/ground-initial-7acd8b71c260.meta.json",
-    "metadataSha256": "5c4372e6563ad3bf0efca012a635044cd44f4971149d0157cfafb902a00ea4d2"
+    "metadataSha256": "81ee85500e24091c1675641745112160dc384b03f1ac2d1b3b2b57fd4d3602ab"
   },
   "application": "Bend-owned rules, UI, bitmap text, input policy, codec, replay, animation and PCM synthesis; browser IO transport only",
   "semanticSha256": "c8dcce907c3c3a6f70e9dfa12a74966879f30ea338b2734637c9acf4579943bf",
@@ -46,14 +46,14 @@
     "target": "browser JavaScript; native parallelism not yet measured"
   },
   "files": {
-    "index.html": "18b346464f46720731b2ede20d202d1ccf6eb300320a4a0c90219e585b3504f7",
-    "host-gxbxaq10.js": "f0be4dee66027681df99297d88ef60a329429c5d960c7b59799a72947e56f52e",
-    "worker-v2-7k9xcdc2.js": "6e61898b01c0c3eea3cc6ce28d4428e8978381f152e92185079f8250db935bfb",
+    "index.html": "f924e46635d73cae7bafe535bb11f7a46242093acab807d3126dda48859871bd",
+    "host-wh9fe0rm.js": "aa1e4a0be5d89734aed901965ef1239463505c253eafe9cdeb4a4382b9ed4cd6",
+    "worker-v2-whvetp28.js": "46677a68e9e04241889c770659b70069a49fade033284f3beec031085a7f4d0a",
     "style-01f82ab8949f.css": "01f82ab8949f0755c6c37e681532ed3196d4b2c5fdb973dd3ef3aa9837cd610a",
     "THIRD_PARTY_NOTICES.txt": "856b99c1f7eec339bd992d29410cc376e0a904d3ee45b11a7495021d37d40e12",
     "Bend-Apache-2.0.txt": "78418ed3cfa4c3f320f827a96ed83349ef9e1af6dc4430b256a0ba2037c42615",
     "Rift-Atlas-Sans-OFL.txt": "2af94f4fb533be8fa23282eb33e08ca311ddf47c2f32777e2040b282deeec65c",
-    "sprite-helper-s4r3djce.js": "5f843d47d08a17cec19e171e74860c00e0c5fd5816eeb70da5c753f4c55a3f18",
+    "sprite-helper-4dp020wg.js": "ff4a15abd5d713b83c98b4ef95cdf4c269b8aa2d01a2e0f8462d35ebec77636b",
     "worker-libs/bot/index.mjs": "04fe288b2fbb31a01c6121d3b7053e674cd25392f655e24aaf097b989bd11dea",
     "worker-libs/bot/bend-77d80270fe5ce1c4.program.mjs": "b4dcb6272d156557d6a6d0d39d7c1ccbc6783162f4f6f431a38e7b8c6a9dc61d",
     "worker-libs/bot/bend-77d80270fe5ce1c4.worker.mjs": "de6f92d12533a51bfc1996427a6432a74c00912ef83b36ff110a88702cccc952",
@@ -67,7 +67,7 @@
     "assets/pieces-fast-1.rga": "35e898841546ea10655c08ec763cb7793a038194c6058f9cbb312155da06ebeb",
     "assets/pieces-fast-2.rga": "06aefb53eb2bc4d982add3690a3c0fbdb82dcaf9639797b374e908a49992e6eb",
     "assets/ground-initial-7acd8b71c260.json": "7acd8b71c26095d7aa359ceed71073b0924d4ec6290603231c3972af3d485eb9",
-    "assets/ground-initial-7acd8b71c260.meta.json": "5c4372e6563ad3bf0efca012a635044cd44f4971149d0157cfafb902a00ea4d2",
-    "sw.js": "a341a12fa12378cdee61c1b51364938ffe43eb4f401af551108d80941b76e7ca"
+    "assets/ground-initial-7acd8b71c260.meta.json": "81ee85500e24091c1675641745112160dc384b03f1ac2d1b3b2b57fd4d3602ab",
+    "sw.js": "22581d4a02a44357ad51b77710f76dcb7aea76220127c62a13bd0172718604e5"
   }
 }
