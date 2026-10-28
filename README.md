@@ -1,5 +1,27 @@
 # Rift Chess — Bend 2 browser preview
 
+## Latest experimental preview — October 28
+
+[Play the current experimental preview](https://haileystorm.github.io/rift-chess-bend2/preview-20261028/).
+It includes the newer artwork, atlas-based picking and detailed refinement while
+an orbit is held still. Continuous movement uses the existing responsive preview.
+This isolated candidate uses Bend 2.0.35 emissions; it is **experimental and
+unadopted**. The accepted project compiler remains 2.0.27. Browser publication
+does not establish native, GPU, physical-audio or stable performance acceptance.
+The candidate's `build.json` binds the exact retained payload and source lineage;
+the original private receipts retain their original dates and limits.
+
+The root URL below remains the historical 2.0.27 preview. Its files and offline
+cache are unchanged by this publication. The separate original TypeScript game
+also remains available.
+
+Both Bend preview URLs share the same browser saved-match and preference keys.
+Export a match before experimenting if you want to retain it separately; playing
+in either preview can replace that browser-local match. Cache isolation does
+not isolate saved games.
+
+## Historical root preview
+
 [Play the experiment](https://haileystorm.github.io/rift-chess-bend2/) | [Original game](https://haileystorm.github.io/rift-chess/)
 
 Static distribution only. [Source, local Bend guide, laws, proofs and verification](https://github.com/HaileyStorm/rift-chess/tree/codex/visual-overhaul/bend2) live in the main project checkout. The exact build source and asset hashes are in `build.json`.

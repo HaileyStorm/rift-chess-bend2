@@ -1,0 +1,114 @@
+{
+  "schema": "rift-experimental-browser-publication/1",
+  "version": "76da587c69226d72a726",
+  "draft": true,
+  "adopted": false,
+  "scope": "Experimental browser preview; separate from the accepted compiler pin and original TypeScript game. No native, GPU, performance or compiler-adoption acceptance.",
+  "candidateCompiler": {
+    "version": "2.0.35",
+    "commit": "79df8d9c40722ee9507a1e253f283b51025f9d6c"
+  },
+  "acceptedCompiler": {
+    "version": "2.0.27",
+    "commit": "d37909174ebd664338ae3194799a9e0899dedd51"
+  },
+  "lineage": {
+    "originalPackageVersion": "32f9a51e8a13c65b584c",
+    "originalPackageManifestSha256": "4622ae575e996d687a82705c43deccd8374db0e76f10c6ab60664602bb3f05dd",
+    "originalPackageBuiltAt": "2026-10-27T04:25:20.665Z",
+    "originalSourceBase": "a7eef47b5578d7e61445eb20b327c701b4c7db92",
+    "workerSourceCommit": "8687c6f6d97abf7fe88c43bce19cee41ea527e6e",
+    "sourceRole": "Local base HEAD; worker-only held-view refinement; retained unchanged Controller/Scene/Menu source and emissions",
+    "sources": [
+      {
+        "path": "bend2/platform/browser/worker-v2.ts",
+        "bytes": 41427,
+        "sha256": "7335d9f623a62a2ffdda668f77a61f8c2a6796877a54a3a93a5e3c515071826d"
+      },
+      {
+        "path": "bend2/platform/browser/sprite-helper.ts",
+        "bytes": 17209,
+        "sha256": "c33ec4d13ac0647adc0792b5ca7c9faa5db9ac181566ab88cbc75e1688f03068"
+      },
+      {
+        "path": "bend2/platform/browser/pose-port.ts",
+        "bytes": 8093,
+        "sha256": "043b91470a69f96a7294354d5e2ad5079a5785a52dcb53b91b08bd08037b7d3b"
+      },
+      {
+        "path": "bend2/platform/browser/asset-port.ts",
+        "bytes": 3610,
+        "sha256": "2a2927c81f5b652685ee2cacb0608b4a7b3eb528fffc8322eebeaad6a215d3e0"
+      },
+      {
+        "path": "bend2/platform/browser/image-port.ts",
+        "bytes": 4897,
+        "sha256": "b6572c2d14902f36bb0833e9644ee7cad0672f0e540576e7f40a4e60fbaf974f"
+      },
+      {
+        "path": "bend2/platform/browser/bitmap-surface.ts",
+        "bytes": 1537,
+        "sha256": "709627ac502b58f1e70b5f9378445957bada8a42c404197f661b9ac2c50d999b"
+      },
+      {
+        "path": "bend2/platform/browser/sw.js",
+        "bytes": 1191,
+        "sha256": "a8161d61d8772ad4d9fafdf891448822fc0382b097f88a754bd7741cd3f1cf73"
+      }
+    ],
+    "retainedEmissions": {
+      "controller": {
+        "entry": "bend2/ApplicationControl.bend",
+        "manifestSHA256": "62262be2133dd7f38ab7f327288ebcff2329b6abc19cc3996303b1b4e4eb1340",
+        "outputFile": "controller.mjs",
+        "outputSHA256": "f1d5803f400e40eb6a397729ad4c616e42572e32a1eb0f865dbbaa26992b7557",
+        "role": "retained unchanged source/type and JS emission; fresh worker-only bundle"
+      },
+      "scene": {
+        "entry": "bend2/graphics/v2game/BoardScene.bend",
+        "manifestSHA256": "2e41901d4bf7be600af6fc72c60c28a9fbf5369d82e3a8a2470fdc26ca305268",
+        "outputFile": "scene.mjs",
+        "outputSHA256": "285341b7d53453c128705ce505f1d233c67ae3eeb8ba9d5d46e969610f1f6793",
+        "role": "retained unchanged source/type and JS emission; fresh worker-only bundle"
+      },
+      "menu": {
+        "entry": "bend2/ui/v2/MenuAA.bend",
+        "manifestSHA256": "47749da477dc3081af60c5ee591259763a1d3c48fcf40b2ec316f3911b5324ba",
+        "outputFile": "menu.mjs",
+        "outputSHA256": "4c71005d0417a024346aa27b10e5ab6f718289d3ca9570d497c0e3325a4a15d7",
+        "role": "retained unchanged source/type and JS emission; fresh worker-only bundle"
+      }
+    },
+    "publicationChanges": [
+      "Isolated preview URL and offline cache namespace",
+      "Public metadata excludes private artifact paths",
+      "Candidate runtime license attribution corrected"
+    ],
+    "evidence": "https://github.com/HaileyStorm/rift-chess/blob/8687c6f6d97abf7fe88c43bce19cee41ea527e6e/bend2/docs/evidence/camera-refinement-20261006/HELD_ORBIT_20261027.md"
+  },
+  "files": {
+    "worker-libs/bot/index.mjs": "48ee148dbbd894a9d30c554038e25605f774c02cf6f671fe563e98e2663e5b23",
+    "worker-libs/bot/bend-106a48b57f632299.program.mjs": "44b2484d94c131a2d3d0010e559fa4210362d66c94672de215f7c7459c6ef1a5",
+    "worker-libs/bot/bend-106a48b57f632299.worker.mjs": "566ee457dc0b4845516ecde0c0a7a47109ab488bb9651bd070185751fccb4378",
+    "worker-libs/bot/bend-106a48b57f632299.runtime.mjs": "0422e7864b96d9f96474818b490eda2dddf974a1054eb402b692687b5a2e96c2",
+    "worker-libs/bot/manifest.json": "972f428e11bd8892820fe82f4902346c2d2589706d662c4a8678d10084071282",
+    "style-01f82ab8949f.css": "01f82ab8949f0755c6c37e681532ed3196d4b2c5fdb973dd3ef3aa9837cd610a",
+    "THIRD_PARTY_NOTICES.txt": "5007602c803e4b35de740c525d1afe2fe0fe1d03fd141440d7606dd947f78978",
+    "Bend-Apache-2.0.txt": "78418ed3cfa4c3f320f827a96ed83349ef9e1af6dc4430b256a0ba2037c42615",
+    "Rift-Atlas-Sans-OFL.txt": "2af94f4fb533be8fa23282eb33e08ca311ddf47c2f32777e2040b282deeec65c",
+    "assets/observatory-astral.rga": "9d4701ca52957506ec58466fa7d63b49a8f6338bd257f5e8f9b69f76b67067bb",
+    "assets/observatory-stone.rga": "0c782ce0f07fa8387ee1a3baba37fda20c46d2cc3febf285e8a104ea5c0e734f",
+    "assets/LICENSES.md": "65628c3a44a5a2baf63a86bb3a6a237ff6b9081986d8acc0f3fc2549ab7de4f8",
+    "assets/rift-observatory-font.rga": "d67f6b3321b0821fdb41ac3c59d42d633757db75a32328f7c38f7a94e5a91977",
+    "assets/pieces-fast-0.rga": "92355991cbf99556a73754fd904ec53a13f8e05fe1d1837d0696ebe6cdd7ad12",
+    "assets/pieces-fast-1.rga": "35e898841546ea10655c08ec763cb7793a038194c6058f9cbb312155da06ebeb",
+    "assets/pieces-fast-2.rga": "06aefb53eb2bc4d982add3690a3c0fbdb82dcaf9639797b374e908a49992e6eb",
+    "assets/ground-initial-ee87a10d5130.bgp": "ee87a10d51304eeadfe05a2c6fce8645768d4a250d6dbd502654bb95c46a1881",
+    "assets/ground-initial-ee87a10d5130.meta.json": "2325ad529d674d38c332b63f62a0f049a0c3e4e2f21b794719498a27212156e5",
+    "sprite-helper-0a0ff9069ec0.js": "0a0ff9069ec0eb50f73d3cd01f48289a7e8143ee87a82e667528b324991f3fe2",
+    "worker-v2-ec8b7ab07240.js": "ec8b7ab0724028d043e1b75a098ed47a07cb606f75850eb80658cff1cd7d3907",
+    "host-audio-4180c0ff13b0.js": "4180c0ff13b0c3a3a841403a9874ca6d109de6bb2b4fe42f6428e72ad3f862b6",
+    "index.html": "1e0467f8ac4acc62e12b39f517f6f43996f840e2c671d9295846300f31c4362d",
+    "sw.js": "223f9d47675e4a54d813ede4eeb8c225431825d056ca6d9015a61e7c514ba8ff"
+  }
+}
