@@ -1,9 +1,9 @@
 {
   "schema": "rift-experimental-browser-publication/1",
-  "version": "76da587c69226d72a726",
+  "version": "e53a618a096cd55e091c",
   "draft": true,
   "adopted": false,
-  "scope": "Experimental browser preview; separate from the accepted compiler pin and original TypeScript game. No native, GPU, performance or compiler-adoption acceptance.",
+  "scope": "Experimental browser preview with scoped menu reuse improvement; no stable performance, native/GPU or compiler-adoption acceptance.",
   "candidateCompiler": {
     "version": "2.0.35",
     "commit": "79df8d9c40722ee9507a1e253f283b51025f9d6c"
@@ -13,12 +13,13 @@
     "commit": "d37909174ebd664338ae3194799a9e0899dedd51"
   },
   "lineage": {
-    "originalPackageVersion": "32f9a51e8a13c65b584c",
-    "originalPackageManifestSha256": "4622ae575e996d687a82705c43deccd8374db0e76f10c6ab60664602bb3f05dd",
-    "originalPackageBuiltAt": "2026-10-27T04:25:20.665Z",
+    "originalPackageVersion": "b01ac2d9a30fe145c146",
+    "originalPackageManifestSha256": "e9cd4ae5b21daf2e1692ca358a640691039a8b61be2815e46b78ce29111f7f8a",
+    "originalPackageBuiltAt": "2026-10-28T17:45:26.544Z",
     "originalSourceBase": "a7eef47b5578d7e61445eb20b327c701b4c7db92",
     "workerSourceCommit": "8687c6f6d97abf7fe88c43bce19cee41ea527e6e",
-    "sourceRole": "Local base HEAD; worker-only held-view refinement; retained unchanged Controller/Scene/Menu source and emissions",
+    "menuSourceCommit": "838ece28d2d10d879a638ad9634dbb75e3f0032a",
+    "sourceRole": "Exact retained baseline plus checked menu-panel successor; earlier native receipts retain their own source scope",
     "sources": [
       {
         "path": "bend2/platform/browser/worker-v2.ts",
@@ -54,6 +55,11 @@
         "path": "bend2/platform/browser/sw.js",
         "bytes": 1191,
         "sha256": "a8161d61d8772ad4d9fafdf891448822fc0382b097f88a754bd7741cd3f1cf73"
+      },
+      {
+        "path": "bend2/ui/v2/MenuAA.bend",
+        "bytes": 25341,
+        "sha256": "c40ae22a661b3e26cb7bed53e20ecd94349c981043f170d190435118a07f7745"
       }
     ],
     "retainedEmissions": {
@@ -73,18 +79,19 @@
       },
       "menu": {
         "entry": "bend2/ui/v2/MenuAA.bend",
-        "manifestSHA256": "47749da477dc3081af60c5ee591259763a1d3c48fcf40b2ec316f3911b5324ba",
+        "manifestSHA256": "5f04d5d22ae6fa98bdd7e28a406373337bf9be987c50a94e4b55de209448ede6",
         "outputFile": "menu.mjs",
-        "outputSHA256": "4c71005d0417a024346aa27b10e5ab6f718289d3ca9570d497c0e3325a4a15d7",
-        "role": "retained unchanged source/type and JS emission; fresh worker-only bundle"
+        "outputSHA256": "e86acd7e157bf64b594fe94a557ab31af5f872c295aa56965feb8cd8490d821d",
+        "role": "Fresh checked Menu source; unchanged controller/scene/helper/runtime reused"
       }
     },
+    "previousPublicationManifestSha256": "a962b52a2f23e65dfed25b67f1b362a8b9985373a37520d11e3040acb4167c8c",
     "publicationChanges": [
-      "Isolated preview URL and offline cache namespace",
-      "Public metadata excludes private artifact paths",
-      "Candidate runtime license attribution corrected"
+      "Menu panel retained in existing background cache",
+      "New hashed worker and host; previous hashed files retained for returning clients",
+      "Same isolated URL/cache namespace and shared saved-game keys"
     ],
-    "evidence": "https://github.com/HaileyStorm/rift-chess/blob/8687c6f6d97abf7fe88c43bce19cee41ea527e6e/bend2/docs/evidence/camera-refinement-20261006/HELD_ORBIT_20261027.md"
+    "evidence": "https://github.com/HaileyStorm/rift-chess/blob/838ece28d2d10d879a638ad9634dbb75e3f0032a/bend2/docs/evidence/stationary-motion-20261006/MENU_PANEL_20261028.md"
   },
   "files": {
     "worker-libs/bot/index.mjs": "48ee148dbbd894a9d30c554038e25605f774c02cf6f671fe563e98e2663e5b23",
@@ -106,9 +113,9 @@
     "assets/ground-initial-ee87a10d5130.bgp": "ee87a10d51304eeadfe05a2c6fce8645768d4a250d6dbd502654bb95c46a1881",
     "assets/ground-initial-ee87a10d5130.meta.json": "2325ad529d674d38c332b63f62a0f049a0c3e4e2f21b794719498a27212156e5",
     "sprite-helper-0a0ff9069ec0.js": "0a0ff9069ec0eb50f73d3cd01f48289a7e8143ee87a82e667528b324991f3fe2",
-    "worker-v2-ec8b7ab07240.js": "ec8b7ab0724028d043e1b75a098ed47a07cb606f75850eb80658cff1cd7d3907",
-    "host-audio-4180c0ff13b0.js": "4180c0ff13b0c3a3a841403a9874ca6d109de6bb2b4fe42f6428e72ad3f862b6",
-    "index.html": "1e0467f8ac4acc62e12b39f517f6f43996f840e2c671d9295846300f31c4362d",
-    "sw.js": "223f9d47675e4a54d813ede4eeb8c225431825d056ca6d9015a61e7c514ba8ff"
+    "worker-v2-d3b0b2b49023.js": "d3b0b2b490231797ea141c521045bf244837e788898556dbf7d618b9b79c0e60",
+    "host-audio-b1266cf94fce.js": "b1266cf94fce97f60599bda099a748fa5d4ab3b7912099358f9ea378651e6a32",
+    "index.html": "0b344cf24dfbde6319edc6739e81b2fa71484cd686c8f9dc750f7ac388760fe9",
+    "sw.js": "8f955c0ddadc34ad6c2903681f59515eb28bed4340da4724b881096de8325f29"
   }
 }
