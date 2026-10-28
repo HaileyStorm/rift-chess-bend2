@@ -5,9 +5,9 @@
 [Play the current experimental preview](https://haileystorm.github.io/rift-chess-bend2/preview-20261028/).
 It includes the newer artwork, atlas-based picking and detailed refinement while
 an orbit is held still. Continuous movement uses the existing responsive preview.
-Menu control updates also reuse their unchanged panel; the observed local
-Move Hints toggles took 21–22 ms versus 55–102 ms in one paired browser journey.
-These samples do not establish stable performance across devices.
+Menu controls reuse unchanged panels, including across closing and reopening
+an unchanged menu. Actual paired browser journeys preserve the rendered result;
+stable performance across devices remains unestablished.
 This isolated candidate uses Bend 2.0.35 emissions; it is **experimental and
 unadopted**. The accepted project compiler remains 2.0.27. Browser publication
 does not establish native, GPU, physical-audio or stable performance acceptance.

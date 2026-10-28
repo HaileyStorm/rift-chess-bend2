@@ -1,6 +1,6 @@
 {
   "schema": "rift-experimental-browser-publication/1",
-  "version": "e53a618a096cd55e091c",
+  "version": "dbab7a213fbef5794afa",
   "draft": true,
   "adopted": false,
   "scope": "Experimental browser preview with scoped menu reuse improvement; no stable performance, native/GPU or compiler-adoption acceptance.",
@@ -13,18 +13,18 @@
     "commit": "d37909174ebd664338ae3194799a9e0899dedd51"
   },
   "lineage": {
-    "originalPackageVersion": "b01ac2d9a30fe145c146",
-    "originalPackageManifestSha256": "e9cd4ae5b21daf2e1692ca358a640691039a8b61be2815e46b78ce29111f7f8a",
-    "originalPackageBuiltAt": "2026-10-28T17:45:26.544Z",
+    "originalPackageVersion": "938143a7cb3061546be1",
+    "originalPackageManifestSha256": "7d04e20b723de00c1f3745691883e77632a9bb5aef08ca696217478a65bbca92",
+    "originalPackageBuiltAt": "2026-10-28T18:11:50.534Z",
     "originalSourceBase": "a7eef47b5578d7e61445eb20b327c701b4c7db92",
-    "workerSourceCommit": "8687c6f6d97abf7fe88c43bce19cee41ea527e6e",
+    "workerSourceCommit": "a2606b9d2ee71538c1c1a96c67a3bfbf24250b72",
     "menuSourceCommit": "838ece28d2d10d879a638ad9634dbb75e3f0032a",
-    "sourceRole": "Exact retained baseline plus checked menu-panel successor; earlier native receipts retain their own source scope",
+    "sourceRole": "Exact retained baseline plus worker menu-cache lifetime successor; earlier native receipts retain their own source scope",
     "sources": [
       {
         "path": "bend2/platform/browser/worker-v2.ts",
-        "bytes": 41427,
-        "sha256": "7335d9f623a62a2ffdda668f77a61f8c2a6796877a54a3a93a5e3c515071826d"
+        "bytes": 41585,
+        "sha256": "681412cee7b9588d07af0da4d2bf4bef902e202867999055816e3d75fd24d248"
       },
       {
         "path": "bend2/platform/browser/sprite-helper.ts",
@@ -82,16 +82,16 @@
         "manifestSHA256": "5f04d5d22ae6fa98bdd7e28a406373337bf9be987c50a94e4b55de209448ede6",
         "outputFile": "menu.mjs",
         "outputSHA256": "e86acd7e157bf64b594fe94a557ab31af5f872c295aa56965feb8cd8490d821d",
-        "role": "Fresh checked Menu source; unchanged controller/scene/helper/runtime reused"
+        "role": "Retained checked Menu source; unchanged controller/scene/helper/runtime reused"
       }
     },
-    "previousPublicationManifestSha256": "a962b52a2f23e65dfed25b67f1b362a8b9985373a37520d11e3040acb4167c8c",
+    "previousPublicationManifestSha256": "f773225a8e4024e63b42064a08309ca6ba178d49658a1d8bcb0d57ae6adaa88c",
     "publicationChanges": [
-      "Menu panel retained in existing background cache",
+      "Menu background retained across close/reopen while rendering identities match",
       "New hashed worker and host; previous hashed files retained for returning clients",
       "Same isolated URL/cache namespace and shared saved-game keys"
     ],
-    "evidence": "https://github.com/HaileyStorm/rift-chess/blob/838ece28d2d10d879a638ad9634dbb75e3f0032a/bend2/docs/evidence/stationary-motion-20261006/MENU_PANEL_20261028.md"
+    "evidence": "https://github.com/HaileyStorm/rift-chess/blob/a2606b9d2ee71538c1c1a96c67a3bfbf24250b72/bend2/docs/evidence/camera-refinement-20261006/MENU_REOPEN_20261028.md"
   },
   "files": {
     "worker-libs/bot/index.mjs": "48ee148dbbd894a9d30c554038e25605f774c02cf6f671fe563e98e2663e5b23",
@@ -113,9 +113,9 @@
     "assets/ground-initial-ee87a10d5130.bgp": "ee87a10d51304eeadfe05a2c6fce8645768d4a250d6dbd502654bb95c46a1881",
     "assets/ground-initial-ee87a10d5130.meta.json": "2325ad529d674d38c332b63f62a0f049a0c3e4e2f21b794719498a27212156e5",
     "sprite-helper-0a0ff9069ec0.js": "0a0ff9069ec0eb50f73d3cd01f48289a7e8143ee87a82e667528b324991f3fe2",
-    "worker-v2-d3b0b2b49023.js": "d3b0b2b490231797ea141c521045bf244837e788898556dbf7d618b9b79c0e60",
-    "host-audio-b1266cf94fce.js": "b1266cf94fce97f60599bda099a748fa5d4ab3b7912099358f9ea378651e6a32",
-    "index.html": "0b344cf24dfbde6319edc6739e81b2fa71484cd686c8f9dc750f7ac388760fe9",
-    "sw.js": "8f955c0ddadc34ad6c2903681f59515eb28bed4340da4724b881096de8325f29"
+    "worker-v2-1e9f27265b3d.js": "1e9f27265b3d2aa439376b8f64a358f97954bb077779886f2e591beebc9f247d",
+    "host-audio-b09e9b56a885.js": "b09e9b56a8852e3f88fd9ba25696340d6f643775d37dbbda3418b63369b88998",
+    "index.html": "6bbc9220bae210702dcde480fb9dcd7bcf21de4d05e8a15fb450093fc7e54919",
+    "sw.js": "eaf7db8a5fc48323e8f0cef43f5d5d2d8d09b7a845aa19f5a67b16d204521b95"
   }
 }
