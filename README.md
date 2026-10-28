@@ -14,6 +14,8 @@ Piece selection uses square edges; movable platforms use amber outer edges
 on hover and selection, keeping the rifts clear of destination circles.
 Idle hover dispatch waits one animation frame so an immediate click can join
 its ordered input batch; dragging still dispatches immediately.
+Theme plates now assemble bottom-up after the original complete payload validation.
+The paired actual game journey retained identical pixels and saved history.
 This isolated candidate uses Bend 2.0.35 emissions; it is **experimental and
 unadopted**. The accepted project compiler remains 2.0.27. Browser publication
 does not establish native, GPU, physical-audio or stable performance acceptance.
