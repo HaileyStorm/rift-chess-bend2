@@ -12,6 +12,8 @@ Camera refinements also reuse fixed piece textures instead of retransmitting
 and decoding them for every view; displayed picking masks remain fresh.
 Piece selection uses square edges; movable platforms use amber outer edges
 on hover and selection, keeping the rifts clear of destination circles.
+Idle hover dispatch waits one animation frame so an immediate click can join
+its ordered input batch; dragging still dispatches immediately.
 This isolated candidate uses Bend 2.0.35 emissions; it is **experimental and
 unadopted**. The accepted project compiler remains 2.0.27. Browser publication
 does not establish native, GPU, physical-audio or stable performance acceptance.
