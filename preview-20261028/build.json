@@ -1,9 +1,9 @@
 {
   "schema": "rift-experimental-browser-publication/1",
-  "version": "c694a9be1f968ae43d51",
+  "version": "d6a06cc712721f86ce79",
   "draft": true,
   "adopted": false,
-  "scope": "Experimental browser preview with scoped atlas texture reuse; no stable performance, native/GPU or compiler-adoption acceptance.",
+  "scope": "Experimental browser preview with user-requested edge feedback; no stable performance, native/GPU or compiler-adoption acceptance.",
   "candidateCompiler": {
     "version": "2.0.35",
     "commit": "79df8d9c40722ee9507a1e253f283b51025f9d6c"
@@ -13,13 +13,14 @@
     "commit": "d37909174ebd664338ae3194799a9e0899dedd51"
   },
   "lineage": {
-    "originalPackageVersion": "33dc052df6037e3d2651",
-    "originalPackageManifestSha256": "a9d2eb62efdad8847ba98d7348b37d29dcd4502527d5beb69af62283be35a033",
-    "originalPackageBuiltAt": "2026-10-28T18:37:14.784Z",
+    "originalPackageVersion": "ab245df363425e1ad041",
+    "originalPackageManifestSha256": "b9ad3570d87bedcd83b4da59eed2c4cfebd8e4cb5403cf8e42b4192dace2fb73",
+    "originalPackageBuiltAt": "2026-10-28T19:04:20.164Z",
     "originalSourceBase": "a7eef47b5578d7e61445eb20b327c701b4c7db92",
     "workerSourceCommit": "63b3f8c264423e6bcc6bc9748b9d3c619a65d53d",
     "menuSourceCommit": "838ece28d2d10d879a638ad9634dbb75e3f0032a",
-    "sourceRole": "Exact retained baseline plus guarded Worker atlas texture reuse; earlier native receipts retain their own source scope",
+    "sceneSourceCommit": "1117a4cac8d3c2b7bcbebec1d6e59fbaba329988",
+    "sourceRole": "Retained browser Worker plus current Scene edge-feedback successor; earlier native receipts retain their own source scope",
     "sources": [
       {
         "path": "bend2/platform/browser/worker-v2.ts",
@@ -60,6 +61,11 @@
         "path": "bend2/ui/v2/MenuAA.bend",
         "bytes": 25341,
         "sha256": "c40ae22a661b3e26cb7bed53e20ecd94349c981043f170d190435118a07f7745"
+      },
+      {
+        "path": "bend2/graphics/v2game/BoardScene.bend",
+        "bytes": 98334,
+        "sha256": "512e1303630a3c3e3feb9bbe010379945148f8ba78868753df809e1e696c27ae"
       }
     ],
     "retainedEmissions": {
@@ -72,10 +78,10 @@
       },
       "scene": {
         "entry": "bend2/graphics/v2game/BoardScene.bend",
-        "manifestSHA256": "2e41901d4bf7be600af6fc72c60c28a9fbf5369d82e3a8a2470fdc26ca305268",
+        "manifestSHA256": "ef2eabcbefee748e089bb02ea4be8f868f9f1c3193fb4a3d52b5499c7afb01ef",
         "outputFile": "scene.mjs",
-        "outputSHA256": "285341b7d53453c128705ce505f1d233c67ae3eeb8ba9d5d46e969610f1f6793",
-        "role": "retained unchanged source/type and JS emission; fresh worker-only bundle"
+        "outputSHA256": "eb3d9937c289071a29c84e641a5442ad3d77f786180d82eb5b781ab97d2d7d8d",
+        "role": "Fresh checked Scene edge-feedback emission; Controller/Menu/runtime retained"
       },
       "menu": {
         "entry": "bend2/ui/v2/MenuAA.bend",
@@ -85,13 +91,13 @@
         "role": "Retained checked Menu source; unchanged controller/scene/helper/runtime reused"
       }
     },
-    "previousPublicationManifestSha256": "930832694bddf822781b99581677556710397645d3ddb5157a0d77bb042b7c17",
+    "previousPublicationManifestSha256": "92b535cc5eebf34e86bfbac6edb8634cce219bc6eb2172dd64f278e5d6f2ba5f",
     "publicationChanges": [
-      "Camera refinement retains fixed atlas textures; fresh rendered masks and placement remain required",
+      "Piece/hover/rift selection circles removed; movable and selected platforms use amber outer edges",
       "New hashed worker and host; previous hashed files retained for returning clients",
       "Same isolated URL/cache namespace and shared saved-game keys"
     ],
-    "evidence": "https://github.com/HaileyStorm/rift-chess/blob/63b3f8c264423e6bcc6bc9748b9d3c619a65d53d/bend2/docs/evidence/camera-refinement-20261006/ATLAS_TEXTURE_REUSE_20261028.md"
+    "evidence": "https://github.com/HaileyStorm/rift-chess/blob/1117a4cac8d3c2b7bcbebec1d6e59fbaba329988/bend2/docs/evidence/stationary-motion-20261006/EDGE_FEEDBACK_20261028.md"
   },
   "files": {
     "worker-libs/bot/index.mjs": "48ee148dbbd894a9d30c554038e25605f774c02cf6f671fe563e98e2663e5b23",
@@ -112,10 +118,10 @@
     "assets/pieces-fast-2.rga": "06aefb53eb2bc4d982add3690a3c0fbdb82dcaf9639797b374e908a49992e6eb",
     "assets/ground-initial-ee87a10d5130.bgp": "ee87a10d51304eeadfe05a2c6fce8645768d4a250d6dbd502654bb95c46a1881",
     "assets/ground-initial-ee87a10d5130.meta.json": "2325ad529d674d38c332b63f62a0f049a0c3e4e2f21b794719498a27212156e5",
-    "sprite-helper-0a0ff9069ec0.js": "0a0ff9069ec0eb50f73d3cd01f48289a7e8143ee87a82e667528b324991f3fe2",
-    "worker-v2-24875025392e.js": "24875025392e3ac79977e575ff52e867ccdd42bbeb777cfb2ecc237d54b6c515",
-    "host-audio-96af54bc2a93.js": "96af54bc2a93ff06be171657571b55a7fed5242d576f46da219d41eec475d120",
-    "index.html": "1817b59dac04b4fc3efe011a3de3e2cb824a1ff23c91506cf7520ca708641487",
-    "sw.js": "53643aafc456bf25025bbcb5b1cad3e87f4bb6c5375cd08d55324eeb79468c28"
+    "sprite-helper-a3636eb8cdb4.js": "a3636eb8cdb49a9deafb0bd044bbce6207c6726a99b3a74f74096a3f0b9034fe",
+    "worker-v2-4507e7e110a5.js": "4507e7e110a509c65f76a88b5ad39de53fdfd18ec1ebda13ef4ce142ae4349d8",
+    "host-audio-e0d1a24bf971.js": "e0d1a24bf971f22a31d21862c54e94c7dc283b4434b60625de5f840972ef2045",
+    "index.html": "3ad2aa4adeb5088fc090d6e521ea20d6d51d9ef809e8b63c4464bae37cbd9902",
+    "sw.js": "7ce395123b938d67b5c03eba0000ac84623f9b92059569d5296bb21213e48d20"
   }
 }
