@@ -1,0 +1,83 @@
+{
+  "schema": "rift-experimental-browser-publication/1",
+  "version": "69996bc86b43390433a8",
+  "draft": true,
+  "adopted": false,
+  "scope": "Shared Undo/View/Game organization and browser viewport backdrop. Experimental current35; accepted compiler unchanged. Scoped UI and retained functional evidence do not establish stable performance, refreshed native UI or compiler adoption.",
+  "candidateCompiler": {
+    "version": "2.0.35",
+    "commit": "79df8d9c40722ee9507a1e253f283b51025f9d6c"
+  },
+  "acceptedCompiler": {
+    "version": "2.0.27",
+    "commit": "d37909174ebd664338ae3194799a9e0899dedd51"
+  },
+  "lineage": {
+    "originalPackageVersion": "9e6eed35d9e9392797f1",
+    "originalPackageManifestSha256": "413997882625e11e47a596e22d69af8dcec5e37f90cbc3d6c212c58bdb541677",
+    "originalPackageBuiltAt": "2026-10-29T20:36:50.621Z",
+    "sourceCommit": "e7f1dce8ea785739c63a15d73aab23f134e4b6db",
+    "sourceRole": "Exact consumed working rows in the retained package are published by this commit; private base revision is not retagged.",
+    "retainedEmissions": {
+      "controller": {
+        "entry": "bend2/CanvasBrowserControl.bend",
+        "manifestSHA256": "cb75bf8b6a9e4873c3575a807fdf4955ff56c1b3357c0feea2ae881f606d6cf6",
+        "outputSHA256": "1299b82e68a407daf6436401af547c2889c3a1579ff717f0230780cbc8afbba9"
+      },
+      "scene": {
+        "entry": "bend2/graphics/v2game/BoardScene.bend",
+        "manifestSHA256": "2cbd62a419a44d3acdcc6a6603412497ce239d770d4574033a1ef13b26d0b81a",
+        "outputSHA256": "544852f8cc809dd839061dbb780b2a93c34eec04527f5ad847a07599a5b0f4a5"
+      },
+      "menu": {
+        "entry": "bend2/ui/v2/MenuAA.bend",
+        "manifestSHA256": "dd318bf01adcb7f67708b00302e95e4629346c28e4ecc61752c01191aaf58e3c",
+        "outputSHA256": "2e5a14eb40734e968c5c74b81e7d65a6813ffd406af5aef99bfdc13e8f9d9418"
+      }
+    },
+    "hostModules": [
+      {
+        "path": "bend2/lib/graphics/v2/host/CanvasPreview.mjs",
+        "bytes": 8659,
+        "sha256": "2b05a07f3e76ddaa4c3012f96a199ca61c86377d50b939e35fd0acb2b7b7f2fc"
+      },
+      {
+        "path": "bend2/lib/graphics/v2/host/ImageBuffer.mjs",
+        "bytes": 5025,
+        "sha256": "e34cfffe3b3781ad2d1ef9691319edcc198b4a83107b77961e85ca985fac7c96"
+      }
+    ],
+    "previousPublicationManifestSha256": "3bebaefdbf458b17f7828d01614b87e3a2158ee6b42545d91a3e40573cdce88b",
+    "evidence": "https://github.com/HaileyStorm/rift-chess/blob/e7f1dce8ea785739c63a15d73aab23f134e4b6db/bend2/docs/evidence/stationary-motion-20261006/UI_UX_20261029.md",
+    "publicationChanges": [
+      "Stable Undo/View/Game, contextual selection and grouped menus shared with native source",
+      "Bend-selected decorative viewport artwork cached between background changes",
+      "Separate URL/cache namespace; same-origin Bend save/preferences remain shared. Original TypeScript app and prior previews untouched."
+    ]
+  },
+  "files": {
+    "worker-libs/bot/index.mjs": "48ee148dbbd894a9d30c554038e25605f774c02cf6f671fe563e98e2663e5b23",
+    "worker-libs/bot/bend-106a48b57f632299.program.mjs": "44b2484d94c131a2d3d0010e559fa4210362d66c94672de215f7c7459c6ef1a5",
+    "worker-libs/bot/bend-106a48b57f632299.worker.mjs": "566ee457dc0b4845516ecde0c0a7a47109ab488bb9651bd070185751fccb4378",
+    "worker-libs/bot/bend-106a48b57f632299.runtime.mjs": "0422e7864b96d9f96474818b490eda2dddf974a1054eb402b692687b5a2e96c2",
+    "worker-libs/bot/manifest.json": "972f428e11bd8892820fe82f4902346c2d2589706d662c4a8678d10084071282",
+    "THIRD_PARTY_NOTICES.txt": "5007602c803e4b35de740c525d1afe2fe0fe1d03fd141440d7606dd947f78978",
+    "Bend-Apache-2.0.txt": "78418ed3cfa4c3f320f827a96ed83349ef9e1af6dc4430b256a0ba2037c42615",
+    "Rift-Atlas-Sans-OFL.txt": "2af94f4fb533be8fa23282eb33e08ca311ddf47c2f32777e2040b282deeec65c",
+    "assets/observatory-astral.rga": "9d4701ca52957506ec58466fa7d63b49a8f6338bd257f5e8f9b69f76b67067bb",
+    "assets/observatory-stone.rga": "0c782ce0f07fa8387ee1a3baba37fda20c46d2cc3febf285e8a104ea5c0e734f",
+    "assets/LICENSES.md": "65628c3a44a5a2baf63a86bb3a6a237ff6b9081986d8acc0f3fc2549ab7de4f8",
+    "assets/rift-observatory-font.rga": "d67f6b3321b0821fdb41ac3c59d42d633757db75a32328f7c38f7a94e5a91977",
+    "assets/pieces-fast-0.rga": "92355991cbf99556a73754fd904ec53a13f8e05fe1d1837d0696ebe6cdd7ad12",
+    "assets/pieces-fast-1.rga": "35e898841546ea10655c08ec763cb7793a038194c6058f9cbb312155da06ebeb",
+    "assets/pieces-fast-2.rga": "06aefb53eb2bc4d982add3690a3c0fbdb82dcaf9639797b374e908a49992e6eb",
+    "assets/ground-initial-ee87a10d5130.bgp": "ee87a10d51304eeadfe05a2c6fce8645768d4a250d6dbd502654bb95c46a1881",
+    "assets/ground-initial-ee87a10d5130.meta.json": "2325ad529d674d38c332b63f62a0f049a0c3e4e2f21b794719498a27212156e5",
+    "style-73ec0f7f544c.css": "73ec0f7f544c8feb6ac2ce818f1ed85b75dc2487fda4aaa58b20005a16ea9e0f",
+    "sprite-helper-f4fa32172d45.js": "f4fa32172d45fb1cfe86458323ff48b0d502090acbef3ba27c487a3e094e743d",
+    "worker-v2-0da43c1a7aaf.js": "0da43c1a7aaf11b8982ad3e75baef12c811046f41b41b1c589ba049d1b5f7c3e",
+    "host-audio-e3e8b3e3b467.js": "e3e8b3e3b467d1d094f41f3cd47665178af964329d0841610daa5f6e16d6fd71",
+    "index.html": "eb22508a49d59cba8a06a17edf1dc5015dd3dcd24553bc9129042386012f89b0",
+    "sw.js": "91d6ad15367ea0c5ae5dd7b18a843fea47d281a19054a3e84ff2b58081d1c4f4"
+  }
+}
