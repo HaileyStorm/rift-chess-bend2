@@ -1,9 +1,9 @@
 {
   "schema": "rift-experimental-browser-publication/1",
-  "version": "69996bc86b43390433a8",
+  "version": "1931bdc5c1c4e9d1af32",
   "draft": true,
   "adopted": false,
-  "scope": "Shared Undo/View/Game organization and browser viewport backdrop. Experimental current35; accepted compiler unchanged. Scoped UI and retained functional evidence do not establish stable performance, refreshed native UI or compiler adoption.",
+  "scope": "Canvas orbit background caching with exact held-pixel parity and retained shared Undo/View/Game UI. Experimental current35; accepted compiler unchanged. One uncontrolled motion observation does not establish stable frame pacing, 33.3ms acceptance, refreshed native UI or compiler adoption.",
   "candidateCompiler": {
     "version": "2.0.35",
     "commit": "79df8d9c40722ee9507a1e253f283b51025f9d6c"
@@ -13,11 +13,11 @@
     "commit": "d37909174ebd664338ae3194799a9e0899dedd51"
   },
   "lineage": {
-    "originalPackageVersion": "9e6eed35d9e9392797f1",
-    "originalPackageManifestSha256": "413997882625e11e47a596e22d69af8dcec5e37f90cbc3d6c212c58bdb541677",
-    "originalPackageBuiltAt": "2026-10-29T20:36:50.621Z",
-    "sourceCommit": "e7f1dce8ea785739c63a15d73aab23f134e4b6db",
-    "sourceRole": "Exact consumed working rows in the retained package are published by this commit; private base revision is not retagged.",
+    "originalPackageVersion": "d4bccf6821bfe4a03697",
+    "originalPackageManifestSha256": "97ad0d4556136c92ffa5e33d359129500e222b96104cdc2e7b18ff5a0d09cad2",
+    "originalPackageBuiltAt": "2026-10-29T21:14:03.676Z",
+    "sourceCommit": "9715970afae6b54444cc5958e612ff059c216a57",
+    "sourceRole": "Exact consumed source rows verified against committed Git blobs; later working-tree edits are not publication inputs.",
     "retainedEmissions": {
       "controller": {
         "entry": "bend2/CanvasBrowserControl.bend",
@@ -38,8 +38,8 @@
     "hostModules": [
       {
         "path": "bend2/lib/graphics/v2/host/CanvasPreview.mjs",
-        "bytes": 8659,
-        "sha256": "2b05a07f3e76ddaa4c3012f96a199ca61c86377d50b939e35fd0acb2b7b7f2fc"
+        "bytes": 8807,
+        "sha256": "ac8289923ab1608abfb2160b4c76242102f3401950d5213c05dcf09d4f305bb4"
       },
       {
         "path": "bend2/lib/graphics/v2/host/ImageBuffer.mjs",
@@ -47,12 +47,12 @@
         "sha256": "e34cfffe3b3781ad2d1ef9691319edcc198b4a83107b77961e85ca985fac7c96"
       }
     ],
-    "previousPublicationManifestSha256": "3bebaefdbf458b17f7828d01614b87e3a2158ee6b42545d91a3e40573cdce88b",
-    "evidence": "https://github.com/HaileyStorm/rift-chess/blob/e7f1dce8ea785739c63a15d73aab23f134e4b6db/bend2/docs/evidence/stationary-motion-20261006/UI_UX_20261029.md",
+    "previousPublicationManifestSha256": "0a8498518062f1c34164c7b2c8f1de2c4ae21b450b71837a857017fbdf379576",
+    "evidence": "https://github.com/HaileyStorm/rift-chess/blob/9715970afae6b54444cc5958e612ff059c216a57/bend2/docs/evidence/stationary-motion-20261006/CANVAS_PREVIEW_20261029.md",
     "publicationChanges": [
-      "Stable Undo/View/Game, contextual selection and grouped menus shared with native source",
-      "Bend-selected decorative viewport artwork cached between background changes",
-      "Separate URL/cache namespace; same-origin Bend save/preferences remain shared. Original TypeScript app and prior previews untouched."
+      "Retain Canvas background surface between unchanged-background orbit frames",
+      "Exact held-pixel parity and original browser functional/UI evidence retained at their recorded scope",
+      "Same UX URL and URL-specific cache prefix with a fresh version; other previews and original TypeScript application untouched."
     ]
   },
   "files": {
@@ -75,9 +75,9 @@
     "assets/ground-initial-ee87a10d5130.meta.json": "2325ad529d674d38c332b63f62a0f049a0c3e4e2f21b794719498a27212156e5",
     "style-73ec0f7f544c.css": "73ec0f7f544c8feb6ac2ce818f1ed85b75dc2487fda4aaa58b20005a16ea9e0f",
     "sprite-helper-f4fa32172d45.js": "f4fa32172d45fb1cfe86458323ff48b0d502090acbef3ba27c487a3e094e743d",
-    "worker-v2-0da43c1a7aaf.js": "0da43c1a7aaf11b8982ad3e75baef12c811046f41b41b1c589ba049d1b5f7c3e",
-    "host-audio-e3e8b3e3b467.js": "e3e8b3e3b467d1d094f41f3cd47665178af964329d0841610daa5f6e16d6fd71",
-    "index.html": "eb22508a49d59cba8a06a17edf1dc5015dd3dcd24553bc9129042386012f89b0",
-    "sw.js": "91d6ad15367ea0c5ae5dd7b18a843fea47d281a19054a3e84ff2b58081d1c4f4"
+    "worker-v2-f1bf69ad0db3.js": "f1bf69ad0db3fc6472c1061ce20c58293f6dc278597772565100e8b5f785ba73",
+    "host-audio-93f940c78ba3.js": "93f940c78ba364581d8157c3ec0ea91d669052d02e4595aafa0b99356e77e700",
+    "index.html": "1f8b410c8541944bdd16e08a88f42d5ce38e5743015e878269e1f1a2f84c8312",
+    "sw.js": "8bf202054854e3b20bc8ea1bfe5f88ca2282405a4d50556324f9ec02ec92b4ec"
   }
 }
