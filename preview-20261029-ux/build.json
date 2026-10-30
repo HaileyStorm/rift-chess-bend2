@@ -1,62 +1,30 @@
 {
   "schema": "rift-experimental-browser-publication/1",
-  "version": "503b339dca38180443fb",
+  "version": "e035930500ad2c4eef09",
   "draft": true,
   "adopted": false,
-  "scope": "Experimental Bend2 current35 browser preview with retained Bend modules/assets and accepted shared Undo/View/Game layout. Ordinary selection, move/animation, Undo, public menus, orbit and stale-refinement rejection were observed in the scoped local journey. Compiler adoption and current GPU acceptance remain pending; no stable frame-pacing, physical-scanout or higher-resolution claim.",
+  "scope": "Current35 browser preview with restored legal tile-shift destination perimeters. Separate Shift hints preference and legality are unchanged. This preview does not claim fresh formal, native, GPU or performance acceptance.",
   "candidateCompiler": {
     "version": "2.0.35",
     "commit": "79df8d9c40722ee9507a1e253f283b51025f9d6c"
   },
-  "acceptedCompiler": {
-    "version": "2.0.27",
-    "commit": "d37909174ebd664338ae3194799a9e0899dedd51"
-  },
   "lineage": {
-    "originalPackageVersion": "4101bf5038a614b95842",
-    "originalPackageManifestSha256": "64a981ed6cd471d6302dda79fca5a9eddc6382ea40e8be7c17e6474c11150b9b",
-    "originalPackageBuiltAt": "2026-10-30T05:16:50.706Z",
-    "originalPackageSourceRevision": "84c48ade5f4cdc6b64695d293491e822bc6e1e22",
-    "sourceCommit": "12c0573f87b097ed6274ba3a12daa4fb8a4ebb5e",
-    "sourceTree": "3a13b1dd09fa0be12ebf10323807eddf9efcd510",
-    "sourceRole": "Original package remains its actual84c base plus two reviewed working rows, subsequently committed at12c. Exact consumed rows verified against that commit. Retained Bend emissions/assets; host repack only, no new compiler emission or relabelled original build.",
-    "retainedEmissions": {
-      "controller": {
-        "entry": "bend2/CanvasBrowserControl.bend",
-        "manifestSHA256": "cb75bf8b6a9e4873c3575a807fdf4955ff56c1b3357c0feea2ae881f606d6cf6",
-        "outputSHA256": "1299b82e68a407daf6436401af547c2889c3a1579ff717f0230780cbc8afbba9"
+    "sourceCommit": "681e708e12b0c8150d3ed1499a95cefffcef9076",
+    "sourceTree": "c3fb91c6dc916cc1643195d38b8229167f860849",
+    "originalPackageVersion": "3dd4dca65b8dd2a12370",
+    "originalPackageManifestSha256": "eb9068a5cf15f407666e852039cfda8a0b18e041fc25b0ff843d66cd1adbba02",
+    "previousPublicationManifestSha256": "d997ebf9727ffa475099f918b03194d7f03303c392ed6fbd246093f4cb200fe7",
+    "changedSources": {
+      "bend2/graphics/v2game/BoardScene.bend": {
+        "bytes": 98767,
+        "sha256": "48a692a909392bbf8a37d534d9f67468b82e54442f2d04cd7fc270958b98328a"
       },
-      "scene": {
-        "entry": "bend2/graphics/v2game/BoardScene.bend",
-        "manifestSHA256": "2cbd62a419a44d3acdcc6a6603412497ce239d770d4574033a1ef13b26d0b81a",
-        "outputSHA256": "544852f8cc809dd839061dbb780b2a93c34eec04527f5ad847a07599a5b0f4a5"
-      },
-      "menu": {
-        "entry": "bend2/ui/v2/MenuAA.bend",
-        "manifestSHA256": "dd318bf01adcb7f67708b00302e95e4629346c28e4ecc61752c01191aaf58e3c",
-        "outputSHA256": "2e5a14eb40734e968c5c74b81e7d65a6813ffd406af5aef99bfdc13e8f9d9418"
+      "bend2/graphics/v2game/BrowserOrbit.bend": {
+        "bytes": 15620,
+        "sha256": "16e01c2c229fb7dc119c92d7cad526bbd441213aec6bb47480f25931118a0ff5"
       }
     },
-    "hostModules": [
-      {
-        "path": "bend2/lib/graphics/v2/host/CanvasPreview.mjs",
-        "bytes": 9349,
-        "sha256": "5328ee7fd8ee318e8e2997595c6696569321a53bd8d5773caf1535792709c5ec"
-      },
-      {
-        "path": "bend2/lib/graphics/v2/host/ImageBuffer.mjs",
-        "bytes": 5025,
-        "sha256": "e34cfffe3b3781ad2d1ef9691319edcc198b4a83107b77961e85ca985fac7c96"
-      }
-    ],
-    "owningJourneyReviewSha256": "ba4106181ab0d4d759d3eb160b101db383bd0539f8523d1d43b3752285b744d3",
-    "previousPublicationManifestSha256": "f3dc934d0da9caac2c03312ecaabc8012de4ee1ac9bdb5b9271bdb8a239c20dd",
-    "evidence": "https://github.com/HaileyStorm/rift-chess/blob/12c0573f87b097ed6274ba3a12daa4fb8a4ebb5e/bend2/docs/evidence/stationary-motion-20261006/CANVAS_PREVIEW_20261029.md",
-    "publicationChanges": [
-      "Current browser diagnostic/canonical-preimage binding with unchanged accepted layout and artwork",
-      "Actual ordinary browser journey and stale-refinement rejection retained at their recorded scope",
-      "Same UX route/cache namespace; historical previews and original TypeScript application untouched"
-    ]
+    "sourceRole": "Fresh affected browser emissions and repack; unchanged compiler, menu, bot and artwork retained at their original scope."
   },
   "files": {
     "worker-libs/bot/index.mjs": "48ee148dbbd894a9d30c554038e25605f774c02cf6f671fe563e98e2663e5b23",
@@ -77,10 +45,10 @@
     "assets/ground-initial-ee87a10d5130.bgp": "ee87a10d51304eeadfe05a2c6fce8645768d4a250d6dbd502654bb95c46a1881",
     "assets/ground-initial-ee87a10d5130.meta.json": "2325ad529d674d38c332b63f62a0f049a0c3e4e2f21b794719498a27212156e5",
     "style-73ec0f7f544c.css": "73ec0f7f544c8feb6ac2ce818f1ed85b75dc2487fda4aaa58b20005a16ea9e0f",
-    "sprite-helper-f4fa32172d45.js": "f4fa32172d45fb1cfe86458323ff48b0d502090acbef3ba27c487a3e094e743d",
-    "worker-v2-57c99b8aeca2.js": "57c99b8aeca2ea6aaeb24f1c79303b825f201cdae3f4f5944a92f8583916bb38",
-    "host-audio-914749f982f6.js": "914749f982f650352fef2e7435310dd371ae289eca990dff604f531da5483a71",
-    "index.html": "8930d27ce10aad7900a5e96e2171c6fadc02b70491f74ac4bd363929ce9012ac",
-    "sw.js": "003507810651fe81386911afac621cbc41de0e7427bf01ab87b05acc23817d53"
+    "sprite-helper-c312a2d6da9c.js": "c312a2d6da9cb3180576a90f7cfae90d34846437e92b67efde69493a9b404b88",
+    "worker-v2-b95d014bc158.js": "b95d014bc15817327d3bd33f097acfdedd7b097c40f2fc8d996c294c20f41fdf",
+    "host-audio-3fcfb6ad9a68.js": "3fcfb6ad9a681a8c1023a6ca598bb702367a9c3b6998a18b1f6ed6d684cc8699",
+    "index.html": "e0f769208f3fef0406ae7025cc9ed03bcc011c9a0b12ecfe0606b1872a995fe8",
+    "sw.js": "6725af699f984778b062ccfe02b64258b973eab726ec055b976e1d42da6bf58b"
   }
 }
