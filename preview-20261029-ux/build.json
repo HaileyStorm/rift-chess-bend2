@@ -1,9 +1,9 @@
 {
   "schema": "rift-experimental-browser-publication/1",
-  "version": "1931bdc5c1c4e9d1af32",
+  "version": "ee1619d005cf7204269e",
   "draft": true,
   "adopted": false,
-  "scope": "Canvas orbit background caching with exact held-pixel parity and retained shared Undo/View/Game UI. Experimental current35; accepted compiler unchanged. One uncontrolled motion observation does not establish stable frame pacing, 33.3ms acceptance, refreshed native UI or compiler adoption.",
+  "scope": "Browser direct Canvas composition using retained accepted Bend modules/assets and shared Undo/View/Game UI. Experimental current35; accepted compiler unchanged. Scoped local pixel-preserving composition and processing-budget observation is not stable changed-view cadence, physical-scanout, higher-resolution, refreshed native UI or compiler-adoption acceptance.",
   "candidateCompiler": {
     "version": "2.0.35",
     "commit": "79df8d9c40722ee9507a1e253f283b51025f9d6c"
@@ -13,11 +13,13 @@
     "commit": "d37909174ebd664338ae3194799a9e0899dedd51"
   },
   "lineage": {
-    "originalPackageVersion": "d4bccf6821bfe4a03697",
-    "originalPackageManifestSha256": "97ad0d4556136c92ffa5e33d359129500e222b96104cdc2e7b18ff5a0d09cad2",
-    "originalPackageBuiltAt": "2026-10-29T21:14:03.676Z",
-    "sourceCommit": "9715970afae6b54444cc5958e612ff059c216a57",
-    "sourceRole": "Exact consumed source rows verified against committed Git blobs; later working-tree edits are not publication inputs.",
+    "originalPackageVersion": "c4c2c88e56eadcf76b26",
+    "originalPackageManifestSha256": "f6c8c8e64abf2b6ec6fed3d63e70c993c80597f4a8243d154f8f4111ea649f85",
+    "originalPackageBuiltAt": "2026-10-30T01:07:35.025Z",
+    "originalPackageSourceRevision": "4613983dc7fef443cebcd466aacd89ef7ed6dd29",
+    "sourceCommit": "84c48ade5f4cdc6b64695d293491e822bc6e1e22",
+    "reviewedImplementationCommit": "d4540e43da5dda48936d0158478c2923849e4251",
+    "sourceRole": "Original package retained from base4613983 plus four reviewed working rows; exact consumed source rows subsequently verified against committed publication source. Host repack only; no new compiler emission or rebuilt/relabelled original package.",
     "retainedEmissions": {
       "controller": {
         "entry": "bend2/CanvasBrowserControl.bend",
@@ -38,8 +40,8 @@
     "hostModules": [
       {
         "path": "bend2/lib/graphics/v2/host/CanvasPreview.mjs",
-        "bytes": 8807,
-        "sha256": "ac8289923ab1608abfb2160b4c76242102f3401950d5213c05dcf09d4f305bb4"
+        "bytes": 9349,
+        "sha256": "5328ee7fd8ee318e8e2997595c6696569321a53bd8d5773caf1535792709c5ec"
       },
       {
         "path": "bend2/lib/graphics/v2/host/ImageBuffer.mjs",
@@ -47,12 +49,12 @@
         "sha256": "e34cfffe3b3781ad2d1ef9691319edcc198b4a83107b77961e85ca985fac7c96"
       }
     ],
-    "previousPublicationManifestSha256": "0a8498518062f1c34164c7b2c8f1de2c4ae21b450b71837a857017fbdf379576",
-    "evidence": "https://github.com/HaileyStorm/rift-chess/blob/9715970afae6b54444cc5958e612ff059c216a57/bend2/docs/evidence/stationary-motion-20261006/CANVAS_PREVIEW_20261029.md",
+    "previousPublicationManifestSha256": "022f4caf0bfa9fe4a8f1dfc8f0d3f03fadb23d51c5ece83648bd297bbfb3d644",
+    "evidence": "https://github.com/HaileyStorm/rift-chess/blob/84c48ade5f4cdc6b64695d293491e822bc6e1e22/bend2/docs/evidence/stationary-motion-20261006/CANVAS_PREVIEW_20261029.md",
     "publicationChanges": [
-      "Retain Canvas background surface between unchanged-background orbit frames",
-      "Exact held-pixel parity and original browser functional/UI evidence retained at their recorded scope",
-      "Same UX URL and URL-specific cache prefix with a fresh version; other previews and original TypeScript application untouched."
+      "Direct full-opaque Canvas composition; final bitmap, nearest picking and logical512 output retained",
+      "Existing Bend-selected viewport backdrop and shared UI retained",
+      "Same UX route/cache namespace; historical previews and original TypeScript application untouched"
     ]
   },
   "files": {
@@ -75,9 +77,9 @@
     "assets/ground-initial-ee87a10d5130.meta.json": "2325ad529d674d38c332b63f62a0f049a0c3e4e2f21b794719498a27212156e5",
     "style-73ec0f7f544c.css": "73ec0f7f544c8feb6ac2ce818f1ed85b75dc2487fda4aaa58b20005a16ea9e0f",
     "sprite-helper-f4fa32172d45.js": "f4fa32172d45fb1cfe86458323ff48b0d502090acbef3ba27c487a3e094e743d",
-    "worker-v2-f1bf69ad0db3.js": "f1bf69ad0db3fc6472c1061ce20c58293f6dc278597772565100e8b5f785ba73",
-    "host-audio-93f940c78ba3.js": "93f940c78ba364581d8157c3ec0ea91d669052d02e4595aafa0b99356e77e700",
-    "index.html": "1f8b410c8541944bdd16e08a88f42d5ce38e5743015e878269e1f1a2f84c8312",
-    "sw.js": "8bf202054854e3b20bc8ea1bfe5f88ca2282405a4d50556324f9ec02ec92b4ec"
+    "worker-v2-a561113b6195.js": "a561113b619595c7887f0f6f5144730884e82684770b44d2c4bae351210a10bf",
+    "host-audio-fde6fc1d528f.js": "fde6fc1d528f0ac33224b701e4b110c0369e71bf0dad5056141a5e5f32db02b5",
+    "index.html": "4b56760825f519d093248ba5667992c2599c1767bcc4d7216a2986e91ab23f4e",
+    "sw.js": "234f59dedc5184fed57d88beed2988d12206fd5fadafa05abc5acd4e62395e11"
   }
 }
